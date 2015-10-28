@@ -15,6 +15,9 @@
 		F2BD66521BDDBF9000D189F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BD66511BDDBF9000D189F3 /* Assets.xcassets */; };
 		F2BD66551BDDBF9000D189F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD66531BDDBF9000D189F3 /* LaunchScreen.storyboard */; };
 		F2BD66601BDDBF9100D189F3 /* DelloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BD665F1BDDBF9100D189F3 /* DelloTests.m */; };
+		F2BD666D1BDDC2E400D189F3 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD666C1BDDC2E400D189F3 /* SignUp.storyboard */; };
+		F2BD666F1BDDC2EE00D189F3 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD666E1BDDC2EE00D189F3 /* SignIn.storyboard */; };
+		F2BD66731BDDC35B00D189F3 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BD66721BDDC35B00D189F3 /* List.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		F2BD665B1BDDBF9100D189F3 /* DelloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BD665F1BDDBF9100D189F3 /* DelloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelloTests.m; sourceTree = "<group>"; };
 		F2BD66611BDDBF9100D189F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2BD666C1BDDC2E400D189F3 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		F2BD666E1BDDC2EE00D189F3 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		F2BD66721BDDC35B00D189F3 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2B911651BE05F4000FABD42 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F2B911661BE05F4900FABD42 /* App Icon */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F2B911661BE05F4900FABD42 /* App Icon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "App Icon";
+			sourceTree = "<group>";
+		};
 		F2BD66361BDDBF9000D189F3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +104,10 @@
 		F2BD66411BDDBF9000D189F3 /* Dello */ = {
 			isa = PBXGroup;
 			children = (
+				F2B911651BE05F4000FABD42 /* Images */,
+				F2BD66711BDDC31A00D189F3 /* List */,
+				F2BD666B1BDDBFA200D189F3 /* SignUp */,
+				F2BD666A1BDDBF9B00D189F3 /* SignIn */,
 				F2BD66451BDDBF9000D189F3 /* AppDelegate.h */,
 				F2BD66461BDDBF9000D189F3 /* AppDelegate.m */,
 				F2BD66481BDDBF9000D189F3 /* ViewController.h */,
@@ -112,6 +137,30 @@
 				F2BD66611BDDBF9100D189F3 /* Info.plist */,
 			);
 			path = DelloTests;
+			sourceTree = "<group>";
+		};
+		F2BD666A1BDDBF9B00D189F3 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD666E1BDDC2EE00D189F3 /* SignIn.storyboard */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		F2BD666B1BDDBFA200D189F3 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD666C1BDDC2E400D189F3 /* SignUp.storyboard */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		F2BD66711BDDC31A00D189F3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD66721BDDC35B00D189F3 /* List.storyboard */,
+			);
+			name = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2BD66551BDDBF9000D189F3 /* LaunchScreen.storyboard in Resources */,
+				F2BD666F1BDDC2EE00D189F3 /* SignIn.storyboard in Resources */,
 				F2BD66521BDDBF9000D189F3 /* Assets.xcassets in Resources */,
+				F2BD666D1BDDC2E400D189F3 /* SignUp.storyboard in Resources */,
+				F2BD66731BDDC35B00D189F3 /* List.storyboard in Resources */,
 				F2BD664D1BDDBF9000D189F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +456,7 @@
 				F2BD66661BDDBF9100D189F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2BD66671BDDBF9100D189F3 /* Build configuration list for PBXNativeTarget "DelloTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +465,7 @@
 				F2BD66691BDDBF9100D189F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
