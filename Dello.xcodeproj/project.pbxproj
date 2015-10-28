@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */; };
+		F2B9116E1BE06D0000FABD42 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116D1BE06D0000FABD42 /* profile.png */; };
+		F2B911701BE0706900FABD42 /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116F1BE0706900FABD42 /* Group.storyboard */; };
+		F2B911741BE075AF00FABD42 /* Custom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B911731BE075AF00FABD42 /* Custom.storyboard */; };
+		F2B911771BE0774900FABD42 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B911761BE0774900FABD42 /* Profile.storyboard */; };
+		F2B9117A1BE0782E00FABD42 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B911791BE0782E00FABD42 /* Result.storyboard */; };
 		F2BD66441BDDBF9000D189F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66431BDDBF9000D189F3 /* main.m */; };
 		F2BD66471BDDBF9000D189F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66461BDDBF9000D189F3 /* AppDelegate.m */; };
 		F2BD664A1BDDBF9000D189F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66491BDDBF9000D189F3 /* ViewController.m */; };
@@ -33,6 +38,11 @@
 
 /* Begin PBXFileReference section */
 		F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = ../../../Public/Tutorial.storyboard; sourceTree = "<group>"; };
+		F2B9116D1BE06D0000FABD42 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		F2B9116F1BE0706900FABD42 /* Group.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Group.storyboard; path = ../Group.storyboard; sourceTree = "<group>"; };
+		F2B911731BE075AF00FABD42 /* Custom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Custom.storyboard; sourceTree = "<group>"; };
+		F2B911761BE0774900FABD42 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		F2B911791BE0782E00FABD42 /* Result.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 		F2BD663F1BDDBF9000D189F3 /* Dello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BD66431BDDBF9000D189F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2BD66451BDDBF9000D189F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +83,7 @@
 		F2B911651BE05F4000FABD42 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F2B9116C1BE06AD600FABD42 /* Tabs */,
 				F2B911661BE05F4900FABD42 /* App Icon */,
 			);
 			name = Images;
@@ -112,6 +123,46 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
+		F2B9116C1BE06AD600FABD42 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				F2B9116D1BE06D0000FABD42 /* profile.png */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		F2B911711BE0706D00FABD42 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				F2B9116F1BE0706900FABD42 /* Group.storyboard */,
+			);
+			name = Group;
+			sourceTree = "<group>";
+		};
+		F2B911721BE075A300FABD42 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F2B911731BE075AF00FABD42 /* Custom.storyboard */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		F2B911751BE0773900FABD42 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F2B911761BE0774900FABD42 /* Profile.storyboard */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		F2B911781BE0781F00FABD42 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				F2B911791BE0782E00FABD42 /* Result.storyboard */,
+			);
+			name = Result;
+			sourceTree = "<group>";
+		};
 		F2BD66361BDDBF9000D189F3 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +184,10 @@
 		F2BD66411BDDBF9000D189F3 /* Dello */ = {
 			isa = PBXGroup;
 			children = (
+				F2B911781BE0781F00FABD42 /* Result */,
+				F2B911751BE0773900FABD42 /* Profile */,
+				F2B911721BE075A300FABD42 /* Custom */,
+				F2B911711BE0706D00FABD42 /* Group */,
 				F2B911691BE061A000FABD42 /* AppDelegate */,
 				F2B911681BE0618600FABD42 /* Tutorial */,
 				F2B911671BE0614800FABD42 /* Main */,
@@ -271,12 +326,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2BD66551BDDBF9000D189F3 /* LaunchScreen.storyboard in Resources */,
+				F2B911771BE0774900FABD42 /* Profile.storyboard in Resources */,
 				F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */,
 				F2BD666F1BDDC2EE00D189F3 /* SignIn.storyboard in Resources */,
 				F2BD66521BDDBF9000D189F3 /* Assets.xcassets in Resources */,
 				F2BD666D1BDDC2E400D189F3 /* SignUp.storyboard in Resources */,
 				F2BD66731BDDC35B00D189F3 /* List.storyboard in Resources */,
+				F2B9117A1BE0782E00FABD42 /* Result.storyboard in Resources */,
+				F2B911701BE0706900FABD42 /* Group.storyboard in Resources */,
 				F2BD664D1BDDBF9000D189F3 /* Main.storyboard in Resources */,
+				F2B9116E1BE06D0000FABD42 /* profile.png in Resources */,
+				F2B911741BE075AF00FABD42 /* Custom.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
