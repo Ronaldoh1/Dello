@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */; };
 		F2BD66441BDDBF9000D189F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66431BDDBF9000D189F3 /* main.m */; };
 		F2BD66471BDDBF9000D189F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66461BDDBF9000D189F3 /* AppDelegate.m */; };
 		F2BD664A1BDDBF9000D189F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66491BDDBF9000D189F3 /* ViewController.m */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = ../../../Public/Tutorial.storyboard; sourceTree = "<group>"; };
 		F2BD663F1BDDBF9000D189F3 /* Dello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BD66431BDDBF9000D189F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2BD66451BDDBF9000D189F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +85,33 @@
 			name = "App Icon";
 			sourceTree = "<group>";
 		};
+		F2B911671BE0614800FABD42 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD66481BDDBF9000D189F3 /* ViewController.h */,
+				F2BD66491BDDBF9000D189F3 /* ViewController.m */,
+				F2BD664B1BDDBF9000D189F3 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		F2B911681BE0618600FABD42 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */,
+			);
+			name = Tutorial;
+			sourceTree = "<group>";
+		};
+		F2B911691BE061A000FABD42 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD66451BDDBF9000D189F3 /* AppDelegate.h */,
+				F2BD66461BDDBF9000D189F3 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
 		F2BD66361BDDBF9000D189F3 = {
 			isa = PBXGroup;
 			children = (
@@ -104,15 +133,13 @@
 		F2BD66411BDDBF9000D189F3 /* Dello */ = {
 			isa = PBXGroup;
 			children = (
-				F2B911651BE05F4000FABD42 /* Images */,
+				F2B911691BE061A000FABD42 /* AppDelegate */,
+				F2B911681BE0618600FABD42 /* Tutorial */,
+				F2B911671BE0614800FABD42 /* Main */,
 				F2BD66711BDDC31A00D189F3 /* List */,
 				F2BD666B1BDDBFA200D189F3 /* SignUp */,
 				F2BD666A1BDDBF9B00D189F3 /* SignIn */,
-				F2BD66451BDDBF9000D189F3 /* AppDelegate.h */,
-				F2BD66461BDDBF9000D189F3 /* AppDelegate.m */,
-				F2BD66481BDDBF9000D189F3 /* ViewController.h */,
-				F2BD66491BDDBF9000D189F3 /* ViewController.m */,
-				F2BD664B1BDDBF9000D189F3 /* Main.storyboard */,
+				F2B911651BE05F4000FABD42 /* Images */,
 				F2BD66511BDDBF9000D189F3 /* Assets.xcassets */,
 				F2BD66531BDDBF9000D189F3 /* LaunchScreen.storyboard */,
 				F2BD66561BDDBF9000D189F3 /* Info.plist */,
@@ -244,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2BD66551BDDBF9000D189F3 /* LaunchScreen.storyboard in Resources */,
+				F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */,
 				F2BD666F1BDDC2EE00D189F3 /* SignIn.storyboard in Resources */,
 				F2BD66521BDDBF9000D189F3 /* Assets.xcassets in Resources */,
 				F2BD666D1BDDC2E400D189F3 /* SignUp.storyboard in Resources */,
