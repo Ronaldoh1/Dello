@@ -7,7 +7,7 @@
 //
 
 #import "WelcomeVC.h"
-
+#import <Parse.h>
 @interface WelcomeVC ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning {
