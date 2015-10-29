@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-vk-cV9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen2.png" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-vk-cV9">
                                 <rect key="frame" x="-4" y="0.0" width="328" height="480"/>
                                 <animations/>
                             </imageView>
@@ -132,11 +132,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4OV-3M-gu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="310" y="287"/>
+            <point key="canvasLocation" x="307" y="283"/>
         </scene>
     </scenes>
     <resources>
         <image name="facebookLoginButton.png" width="566" height="121"/>
-        <image name="launchScreen.png" width="4838" height="7200"/>
+        <image name="launchScreen2.png" width="727" height="1024"/>
     </resources>
 </document>

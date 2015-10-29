@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="oKw-EN-3eV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen2.png" translatesAutoresizingMaskIntoConstraints="NO" id="791-7c-Je4">
                                 <rect key="frame" x="-4" y="0.0" width="328" height="480"/>
                                 <animations/>
                             </imageView>
@@ -26,10 +26,10 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="oKw-EN-3eV" secondAttribute="bottom" id="1Ok-MP-axB"/>
-                            <constraint firstItem="oKw-EN-3eV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="8Z7-0C-kI5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oKw-EN-3eV" secondAttribute="trailing" constant="-20" id="V1H-Sr-eQH"/>
-                            <constraint firstItem="oKw-EN-3eV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="nft-hK-gC4"/>
+                            <constraint firstItem="791-7c-Je4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="7rm-Zz-acS"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="791-7c-Je4" secondAttribute="bottom" id="IV6-Dc-cOK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="791-7c-Je4" secondAttribute="trailing" constant="-20" id="etG-xC-D6E"/>
+                            <constraint firstItem="791-7c-Je4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="m82-rG-QmP"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreen.png" width="4838" height="7200"/>
+        <image name="launchScreen2.png" width="727" height="1024"/>
     </resources>
 </document>

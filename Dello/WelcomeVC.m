@@ -8,6 +8,8 @@
 
 #import "WelcomeVC.h"
 #import <Parse.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 @interface WelcomeVC ()
 
 @end
@@ -31,11 +33,27 @@
 
 - (IBAction)onSignUpButtonTapped:(UIButton *)sender {
 
+    UIStoryboard *signUpStoryBoard = [UIStoryboard storyboardWithName:@"SignUp" bundle:nil];
+    UINavigationController *signUpNavVC = [signUpStoryBoard instantiateViewControllerWithIdentifier:@"SignUpNavVC"];
+    [self presentViewController:signUpNavVC animated:YES completion:nil];
+    
+
 
 }
 - (IBAction)onSignInWithFbButtonTapped:(UIButton *)sender {
+    //1. need to get user's permissions.
+    NSArray *permissionsArray = [NSArray arrayWithObjects:@"public_profile", @"email", @"user_friends", nil];
 
-    
+    [PFFacebookUtils logInInBackgroundWithReadPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
+        if (!user) {
+            NSLog(@"Uh oh. The user cancelled the Facebook login.");
+        } else if (user.isNew) {
+            NSLog(@"User signed up and logged in through Facebook!");
+        } else {
+            NSLog(@"User logged in through Facebook!");
+        }
+    }];
+
 }
 
 /*
