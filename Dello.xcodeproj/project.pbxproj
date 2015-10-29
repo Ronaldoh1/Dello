@@ -20,6 +20,11 @@
 		F2B911891BE1755500FABD42 /* ProfileTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B911881BE1755500FABD42 /* ProfileTVC.m */; };
 		F2B9118C1BE1756900FABD42 /* ResultsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B9118B1BE1756900FABD42 /* ResultsTVC.m */; };
 		F2B9118F1BE17F4900FABD42 /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B9118E1BE17F4900FABD42 /* launchScreen.png */; };
+		F2B911931BE182B100FABD42 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B911921BE182B100FABD42 /* Welcome.storyboard */; };
+		F2B911961BE182D500FABD42 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B911951BE182D500FABD42 /* WelcomeVC.m */; };
+		F2B911981BE1883B00FABD42 /* facebookLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B911971BE1883B00FABD42 /* facebookLoginButton.png */; };
+		F2B9119B1BE1F5BE00FABD42 /* TutorialPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B9119A1BE1F5BE00FABD42 /* TutorialPageVC.m */; };
+		F2B9119E1BE1F5FB00FABD42 /* PageContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B9119D1BE1F5FB00FABD42 /* PageContentVC.m */; };
 		F2BD66441BDDBF9000D189F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66431BDDBF9000D189F3 /* main.m */; };
 		F2BD66471BDDBF9000D189F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66461BDDBF9000D189F3 /* AppDelegate.m */; };
 		F2BD664A1BDDBF9000D189F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66491BDDBF9000D189F3 /* ViewController.m */; };
@@ -63,6 +68,14 @@
 		F2B9118A1BE1756900FABD42 /* ResultsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTVC.h; sourceTree = "<group>"; };
 		F2B9118B1BE1756900FABD42 /* ResultsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTVC.m; sourceTree = "<group>"; };
 		F2B9118E1BE17F4900FABD42 /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreen.png; sourceTree = "<group>"; };
+		F2B911921BE182B100FABD42 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		F2B911941BE182D500FABD42 /* WelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
+		F2B911951BE182D500FABD42 /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
+		F2B911971BE1883B00FABD42 /* facebookLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookLoginButton.png; sourceTree = "<group>"; };
+		F2B911991BE1F5BE00FABD42 /* TutorialPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialPageVC.h; sourceTree = "<group>"; };
+		F2B9119A1BE1F5BE00FABD42 /* TutorialPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialPageVC.m; sourceTree = "<group>"; };
+		F2B9119C1BE1F5FB00FABD42 /* PageContentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentVC.h; sourceTree = "<group>"; };
+		F2B9119D1BE1F5FB00FABD42 /* PageContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentVC.m; sourceTree = "<group>"; };
 		F2BD663F1BDDBF9000D189F3 /* Dello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BD66431BDDBF9000D189F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2BD66451BDDBF9000D189F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */,
+				F2B911991BE1F5BE00FABD42 /* TutorialPageVC.h */,
+				F2B9119A1BE1F5BE00FABD42 /* TutorialPageVC.m */,
+				F2B9119C1BE1F5FB00FABD42 /* PageContentVC.h */,
+				F2B9119D1BE1F5FB00FABD42 /* PageContentVC.m */,
 			);
 			name = Tutorial;
 			sourceTree = "<group>";
@@ -202,8 +219,19 @@
 			isa = PBXGroup;
 			children = (
 				F2B9118E1BE17F4900FABD42 /* launchScreen.png */,
+				F2B911971BE1883B00FABD42 /* facebookLoginButton.png */,
 			);
 			name = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		F2B911911BE1829000FABD42 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F2B911921BE182B100FABD42 /* Welcome.storyboard */,
+				F2B911941BE182D500FABD42 /* WelcomeVC.h */,
+				F2B911951BE182D500FABD42 /* WelcomeVC.m */,
+			);
+			name = Welcome;
 			sourceTree = "<group>";
 		};
 		F2BD66361BDDBF9000D189F3 = {
@@ -228,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				F2B911691BE061A000FABD42 /* AppDelegate */,
+				F2B911911BE1829000FABD42 /* Welcome */,
 				F2B911781BE0781F00FABD42 /* Result */,
 				F2B911751BE0773900FABD42 /* Profile */,
 				F2B911721BE075A300FABD42 /* Custom */,
@@ -376,6 +405,7 @@
 			files = (
 				F2BD66551BDDBF9000D189F3 /* LaunchScreen.storyboard in Resources */,
 				F2B911771BE0774900FABD42 /* Profile.storyboard in Resources */,
+				F2B911981BE1883B00FABD42 /* facebookLoginButton.png in Resources */,
 				F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */,
 				F2BD666F1BDDC2EE00D189F3 /* SignIn.storyboard in Resources */,
 				F2BD66521BDDBF9000D189F3 /* Assets.xcassets in Resources */,
@@ -387,6 +417,7 @@
 				F2BD664D1BDDBF9000D189F3 /* Main.storyboard in Resources */,
 				F2B9116E1BE06D0000FABD42 /* profile.png in Resources */,
 				F2B911741BE075AF00FABD42 /* Custom.storyboard in Resources */,
+				F2B911931BE182B100FABD42 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B911861BE1751E00FABD42 /* GroupTC.m in Sources */,
+				F2B9119B1BE1F5BE00FABD42 /* TutorialPageVC.m in Sources */,
 				F2B911801BE173DE00FABD42 /* SignUpVC.m in Sources */,
 				F2B911891BE1755500FABD42 /* ProfileTVC.m in Sources */,
 				F2BD664A1BDDBF9000D189F3 /* ViewController.m in Sources */,
@@ -412,6 +444,8 @@
 				F2B9117D1BE173BD00FABD42 /* SignInVC.m in Sources */,
 				F2B9118C1BE1756900FABD42 /* ResultsTVC.m in Sources */,
 				F2BD66501BDDBF9000D189F3 /* Dello.xcdatamodeld in Sources */,
+				F2B911961BE182D500FABD42 /* WelcomeVC.m in Sources */,
+				F2B9119E1BE1F5FB00FABD42 /* PageContentVC.m in Sources */,
 				F2BD66441BDDBF9000D189F3 /* main.m in Sources */,
 				F2B911831BE1746900FABD42 /* ListTVC.m in Sources */,
 			);
@@ -539,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Dello/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dello.Dello;
@@ -550,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Dello/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dello.Dello;
