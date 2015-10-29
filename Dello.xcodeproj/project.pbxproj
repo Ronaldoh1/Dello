@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B7C3845056D38BF6FA3B3F0 /* libPods-Dello.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 639E7C0EA99838D2BC42666B /* libPods-Dello.a */; };
 		F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */; };
 		F2B9116E1BE06D0000FABD42 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116D1BE06D0000FABD42 /* profile.png */; };
 		F2B911701BE0706900FABD42 /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116F1BE0706900FABD42 /* Group.storyboard */; };
@@ -49,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		156618C734F04A69E7964275 /* Pods-Dello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dello.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dello/Pods-Dello.release.xcconfig"; sourceTree = "<group>"; };
+		639E7C0EA99838D2BC42666B /* libPods-Dello.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dello.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = ../../../Public/Tutorial.storyboard; sourceTree = "<group>"; };
 		F2B9116D1BE06D0000FABD42 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		F2B9116F1BE0706900FABD42 /* Group.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Group.storyboard; path = ../Group.storyboard; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 		F2BD666C1BDDC2E400D189F3 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		F2BD666E1BDDC2EE00D189F3 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		F2BD66721BDDC35B00D189F3 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		FB2666248BDF554B21EA6DE2 /* Pods-Dello.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dello.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dello/Pods-Dello.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7C3845056D38BF6FA3B3F0 /* libPods-Dello.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44642981C9A992124E684417 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB2666248BDF554B21EA6DE2 /* Pods-Dello.debug.xcconfig */,
+				156618C734F04A69E7964275 /* Pods-Dello.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE2A14C40462BB0099652A52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				639E7C0EA99838D2BC42666B /* libPods-Dello.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2B911651BE05F4000FABD42 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +262,8 @@
 				F2BD66411BDDBF9000D189F3 /* Dello */,
 				F2BD665E1BDDBF9100D189F3 /* DelloTests */,
 				F2BD66401BDDBF9000D189F3 /* Products */,
+				44642981C9A992124E684417 /* Pods */,
+				BE2A14C40462BB0099652A52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -330,9 +354,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2BD66641BDDBF9100D189F3 /* Build configuration list for PBXNativeTarget "Dello" */;
 			buildPhases = (
+				E47092086A728067D7C787C0 /* Check Pods Manifest.lock */,
 				F2BD663B1BDDBF9000D189F3 /* Sources */,
 				F2BD663C1BDDBF9000D189F3 /* Frameworks */,
 				F2BD663D1BDDBF9000D189F3 /* Resources */,
+				9CB6C5250AB2C905A2EAFBAF /* Embed Pods Frameworks */,
+				6C4F084751E3DF82C992378C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -429,6 +456,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C4F084751E3DF82C992378C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dello/Pods-Dello-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CB6C5250AB2C905A2EAFBAF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dello/Pods-Dello-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47092086A728067D7C787C0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2BD663B1BDDBF9000D189F3 /* Sources */ = {
@@ -571,6 +646,7 @@
 		};
 		F2BD66651BDDBF9100D189F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2666248BDF554B21EA6DE2 /* Pods-Dello.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -583,6 +659,7 @@
 		};
 		F2BD66661BDDBF9100D189F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156618C734F04A69E7964275 /* Pods-Dello.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
