@@ -18,10 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackShadeSignUpBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="nAl-th-kMb">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <animations/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="l" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0t-aI-8Zg">
                                 <rect key="frame" x="158" y="372" width="3" height="21"/>
                                 <animations/>
@@ -90,13 +86,6 @@
                                     <action selector="onSignUpButtonTapped:" destination="Dlu-Vh-IHL" eventType="touchUpInside" id="Lt8-PC-XBa"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appNameMedium.png" translatesAutoresizingMaskIntoConstraints="NO" id="NDl-ke-ESg">
-                                <rect key="frame" x="16" y="64" width="288" height="131"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="131" id="JZB-AP-OOi"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekO-sE-IfK">
                                 <rect key="frame" x="16" y="420" width="288" height="19"/>
                                 <animations/>
@@ -107,33 +96,39 @@
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTermsAndConditionsButtonTapped:" destination="Dlu-Vh-IHL" eventType="touchUpInside" id="LjQ-U0-1EY"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="NDl-ke-ESg">
+                                <rect key="frame" x="11" y="78" width="296" height="105"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="JZB-AP-OOi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.24705882352941178" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NDl-ke-ESg" firstAttribute="trailing" secondItem="yTv-7r-1VR" secondAttribute="trailingMargin" id="13P-Lg-7AD"/>
+                            <constraint firstItem="NDl-ke-ESg" firstAttribute="trailing" secondItem="yTv-7r-1VR" secondAttribute="trailingMargin" constant="3" id="13P-Lg-7AD"/>
                             <constraint firstItem="ekO-sE-IfK" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" id="1c8-Fr-UKS"/>
                             <constraint firstAttribute="centerY" secondItem="n89-o6-6Q8" secondAttribute="centerY" constant="-9" id="3LW-bH-csh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n89-o6-6Q8" secondAttribute="trailing" constant="-16" id="4pV-H0-56P"/>
                             <constraint firstItem="e5b-pg-Ceg" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-16" id="68p-DA-zjT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mWt-Tx-ivT" secondAttribute="trailing" constant="-16" id="8gB-vY-pza"/>
-                            <constraint firstItem="nAl-th-kMb" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-16" id="AJ5-xg-rba"/>
                             <constraint firstAttribute="centerY" secondItem="z0t-aI-8Zg" secondAttribute="centerY" constant="-142.5" id="B0P-LA-FcF"/>
                             <constraint firstItem="mWt-Tx-ivT" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-16" id="EWF-1H-tPj"/>
-                            <constraint firstItem="NDl-ke-ESg" firstAttribute="top" secondItem="q2d-aI-jCg" secondAttribute="bottom" id="HxS-fk-htG"/>
-                            <constraint firstItem="s5g-Ya-A0m" firstAttribute="top" secondItem="nAl-th-kMb" secondAttribute="bottom" id="LZS-8F-Xqi"/>
+                            <constraint firstItem="NDl-ke-ESg" firstAttribute="top" secondItem="q2d-aI-jCg" secondAttribute="bottom" constant="14" id="HxS-fk-htG"/>
                             <constraint firstItem="s5g-Ya-A0m" firstAttribute="top" secondItem="ekO-sE-IfK" secondAttribute="bottom" constant="41" id="MvM-K3-5Pm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nAl-th-kMb" secondAttribute="trailing" constant="-16" id="NWv-wt-gPB"/>
                             <constraint firstItem="ekO-sE-IfK" firstAttribute="trailing" secondItem="yTv-7r-1VR" secondAttribute="trailingMargin" id="Njb-fP-Cvt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vi3-j9-cg5" secondAttribute="trailing" constant="-16" id="Q62-Ht-XGR"/>
                             <constraint firstItem="n89-o6-6Q8" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-16" id="RaT-UM-kIc"/>
-                            <constraint firstItem="NDl-ke-ESg" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" id="WSO-hf-nPS"/>
+                            <constraint firstItem="NDl-ke-ESg" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-5" id="WSO-hf-nPS"/>
                             <constraint firstAttribute="centerY" secondItem="mWt-Tx-ivT" secondAttribute="centerY" constant="-94" id="YyZ-82-mCD"/>
                             <constraint firstAttribute="centerY" secondItem="e5b-pg-Ceg" secondAttribute="centerY" constant="29" id="b66-hf-yit"/>
                             <constraint firstAttribute="centerY" secondItem="vi3-j9-cg5" secondAttribute="centerY" constant="-47" id="e1Y-IB-y80"/>
                             <constraint firstAttribute="centerX" secondItem="z0t-aI-8Zg" secondAttribute="centerX" constant="1" id="gJa-rh-uGf"/>
-                            <constraint firstItem="nAl-th-kMb" firstAttribute="top" secondItem="yTv-7r-1VR" secondAttribute="topMargin" id="hg6-zn-5Fg"/>
                             <constraint firstItem="vi3-j9-cg5" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-16" id="zCP-ql-RRc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e5b-pg-Ceg" secondAttribute="trailing" constant="-16" id="zhO-Mb-5bL"/>
                         </constraints>
@@ -141,7 +136,10 @@
                     <navigationItem key="navigationItem" title="Let's Get Started" id="Hg4-W9-E5O">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" style="done" id="EL3-Ka-Xty">
                             <inset key="imageInsets" minX="-15" minY="5" maxX="4" maxY="2"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="0.0" green="0.2470588235" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onCancelButtonTapped:" destination="Dlu-Vh-IHL" id="db2-24-thA"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -177,7 +175,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="appNameMedium.png" width="287" height="510"/>
-        <image name="blackShadeSignUpBackground.png" width="1080" height="1920"/>
+        <image name="clearLogo.png" width="5518" height="5518"/>
     </resources>
 </document>

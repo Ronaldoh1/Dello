@@ -18,10 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackShadeSignInBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="lzF-6M-3Uk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <animations/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANS-VU-81y">
                                 <rect key="frame" x="16" y="424" width="288" height="45"/>
                                 <animations/>
@@ -55,11 +51,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appNameMedium.png" translatesAutoresizingMaskIntoConstraints="NO" id="anf-nL-eNx">
-                                <rect key="frame" x="16" y="79" width="288" height="134"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="anf-nL-eNx">
+                                <rect key="frame" x="12" y="79" width="301" height="85"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="134" id="m23-ze-PD4"/>
+                                    <constraint firstAttribute="height" constant="85" id="m23-ze-PD4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sY7-9D-YJQ">
@@ -73,6 +69,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignInButtonTapped:" destination="uhq-wN-hdS" eventType="touchUpInside" id="JTD-Cq-M7o"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="l" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7N-YH-4gc">
                                 <rect key="frame" x="158" y="308" width="4" height="21"/>
@@ -97,19 +96,16 @@
                             </textField>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.24705882352941178" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="lzF-6M-3Uk" firstAttribute="leading" secondItem="yMg-t5-UM3" secondAttribute="leadingMargin" constant="-16" id="06V-EK-pKS"/>
                             <constraint firstAttribute="centerY" secondItem="XLw-mM-MJp" secondAttribute="centerY" constant="5" id="0fh-lK-DYh"/>
                             <constraint firstItem="XLw-mM-MJp" firstAttribute="leading" secondItem="yMg-t5-UM3" secondAttribute="leadingMargin" constant="-16" id="1Dm-ps-MXa"/>
-                            <constraint firstItem="lzF-6M-3Uk" firstAttribute="top" secondItem="yMg-t5-UM3" secondAttribute="topMargin" id="2bS-BN-XfT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sY7-9D-YJQ" secondAttribute="trailing" constant="-16" id="5jK-UF-IbV"/>
                             <constraint firstItem="ANS-VU-81y" firstAttribute="leading" secondItem="yMg-t5-UM3" secondAttribute="leadingMargin" id="9CV-9T-7u3"/>
                             <constraint firstAttribute="centerX" secondItem="X7N-YH-4gc" secondAttribute="centerX" id="CGc-VS-T4Q"/>
                             <constraint firstItem="9da-QA-KO7" firstAttribute="leading" secondItem="yMg-t5-UM3" secondAttribute="leadingMargin" id="DGA-fZ-PV4"/>
                             <constraint firstAttribute="centerY" secondItem="9da-QA-KO7" secondAttribute="centerY" constant="-161.5" id="HSc-f0-XZa"/>
-                            <constraint firstItem="59n-0X-5BM" firstAttribute="top" secondItem="lzF-6M-3Uk" secondAttribute="bottom" id="HXd-7t-n7T"/>
-                            <constraint firstItem="anf-nL-eNx" firstAttribute="trailing" secondItem="yMg-t5-UM3" secondAttribute="trailingMargin" id="Kda-Mu-1Ou"/>
+                            <constraint firstItem="anf-nL-eNx" firstAttribute="trailing" secondItem="yMg-t5-UM3" secondAttribute="trailingMargin" constant="9" id="Kda-Mu-1Ou"/>
                             <constraint firstAttribute="centerY" secondItem="X7N-YH-4gc" secondAttribute="centerY" constant="-78.5" id="Nje-TS-aWL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XLw-mM-MJp" secondAttribute="trailing" constant="-16" id="OO6-cq-zcq"/>
                             <constraint firstAttribute="centerY" secondItem="gb9-sb-H8W" secondAttribute="centerY" constant="43" id="SCs-Ay-39w"/>
@@ -117,8 +113,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="gb9-sb-H8W" secondAttribute="trailing" constant="-16" id="d2n-U7-fob"/>
                             <constraint firstAttribute="centerY" secondItem="sY7-9D-YJQ" secondAttribute="centerY" constant="-43" id="epJ-HR-ocS"/>
                             <constraint firstItem="59n-0X-5BM" firstAttribute="top" secondItem="ANS-VU-81y" secondAttribute="bottom" constant="11" id="eqn-MR-oDx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lzF-6M-3Uk" secondAttribute="trailing" constant="-16" id="iKp-Cr-Qla"/>
-                            <constraint firstItem="anf-nL-eNx" firstAttribute="leading" secondItem="yMg-t5-UM3" secondAttribute="leadingMargin" id="neG-JR-Bhe"/>
+                            <constraint firstItem="anf-nL-eNx" firstAttribute="leading" secondItem="yMg-t5-UM3" secondAttribute="leadingMargin" constant="-4" id="neG-JR-Bhe"/>
                             <constraint firstItem="ANS-VU-81y" firstAttribute="trailing" secondItem="yMg-t5-UM3" secondAttribute="trailingMargin" id="p1V-rH-q9h"/>
                             <constraint firstItem="anf-nL-eNx" firstAttribute="top" secondItem="DL6-iH-1la" secondAttribute="bottom" constant="15" id="ulh-HK-BhW"/>
                             <constraint firstItem="sY7-9D-YJQ" firstAttribute="leading" secondItem="yMg-t5-UM3" secondAttribute="leadingMargin" constant="-16" id="wMz-Gn-OdJ"/>
@@ -128,18 +123,26 @@
                     <navigationItem key="navigationItem" title="Welcome Back!" id="lAm-rh-QGg">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" style="done" id="5kk-ne-g4E">
                             <inset key="imageInsets" minX="-15" minY="5" maxX="0.0" maxY="0.0"/>
+                            <color key="tintColor" red="0.0" green="0.24705882352941178" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onCancelButtonTapped:" destination="uhq-wN-hdS" id="xmd-nb-ETw"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="gb9-sb-H8W" id="ggQ-aP-8QH"/>
+                        <outlet property="passwordTextfield" destination="XLw-mM-MJp" id="WH8-H5-xZt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5m-fQ-dOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1865" y="427"/>
+            <point key="canvasLocation" x="1910" y="422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ouu-rY-nQ3">
             <objects>
-                <navigationController storyboardIdentifier="signInNavVC" automaticallyAdjustsScrollViewInsets="NO" id="ZgR-AE-HWp" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SignInNavVC" automaticallyAdjustsScrollViewInsets="NO" id="ZgR-AE-HWp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pmL-Uo-pPc">
@@ -158,7 +161,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="appNameMedium.png" width="1080" height="1920"/>
-        <image name="blackShadeSignInBackground.png" width="1080" height="1920"/>
+        <image name="clearLogo.png" width="5518" height="5518"/>
     </resources>
 </document>

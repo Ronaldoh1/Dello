@@ -28,7 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)onSignUpButtonTapped:(UIButton *)sender {
-    NSString *error = nil;
+    NSString *error = @"";
 
     if(![self.passwordTextfield.text isEqualToString:self.confirmPasswordTextfield.text]){
         error = @"Passwords do not match, please try again";
@@ -37,6 +37,7 @@
          error = @"You password must be at least 6 Characters";
 
     }else if([self.emailTextfield.text isEqualToString:@""] || [self.passwordTextfield.text isEqualToString:@""] || [self.confirmPasswordTextfield.text isEqualToString:@""]) {
+        error = @"All fields are required!";
 
     }else{
         //if the user has input everythign correctly - simply sign them up.
@@ -47,6 +48,8 @@
     //if there an error, then present that error to the user.
 
     if (![error isEqualToString:@""]) {
+
+        [self displayAlertWithTitle:@"Error" andErrorString:error];
 
     }
 
@@ -61,7 +64,7 @@
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {   // Hooray! Let them use the app now.
 
-            NSLog(@"let them Use the app");
+            [self presentViewControllerWithName:@"MainTabBarController" andWithStoryboardName:@"Main"];
 
         } else {
 
@@ -85,6 +88,29 @@
 
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+//Present VC with storyboard name and NavigationViewController
+
+-(void)presentViewControllerWithName:(NSString *)VcName andWithStoryboardName:(NSString *)SbName{
+
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:SbName bundle:nil];
+    UIViewController *NavCV = [storyBoard instantiateViewControllerWithIdentifier:VcName];
+
+    //present it
+
+    [self presentViewController:NavCV animated:YES completion:nil];
+
+}
+- (IBAction)onCancelButtonTapped:(UIBarButtonItem *)sender {
+
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)onTermsAndConditionsButtonTapped:(UIButton *)sender {
+
+
+}
+
 /*
 #pragma mark - Navigation
 

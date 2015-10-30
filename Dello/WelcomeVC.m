@@ -11,6 +11,8 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 @interface WelcomeVC ()
+@property (weak, nonatomic) IBOutlet UIButton *signInButton;
+@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
 
 @end
 
@@ -20,6 +22,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
+    self.signInButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.signInButton.layer.borderWidth = 3.0;
+
+    self.signUpButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.signUpButton.layer.borderWidth = 3.0;
+
+
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,7 +38,9 @@
 }
 - (IBAction)onSignInButtonTapped:(UIButton *)sender{
 
-
+    UIStoryboard *signInStoryBoard = [UIStoryboard storyboardWithName:@"SignIn" bundle:nil];
+    UINavigationController *signInNavVC = [signInStoryBoard instantiateViewControllerWithIdentifier:@"SignInNavVC"];
+    [self presentViewController:signInNavVC animated:YES completion:nil];
 }
 
 - (IBAction)onSignUpButtonTapped:(UIButton *)sender {
@@ -51,9 +63,24 @@
             NSLog(@"User signed up and logged in through Facebook!");
         } else {
             NSLog(@"User logged in through Facebook!");
+            [self presentViewControllerWithName:@"MainTabBarController" andWithStoryboardName:@"Main"];
+
         }
     }];
 
+}
+
+//Present VC with storyboard name and NavigationViewController
+
+-(void)presentViewControllerWithName:(NSString *)VcName andWithStoryboardName:(NSString *)SbName{
+
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:SbName bundle:nil];
+    UIViewController *NavCV = [storyBoard instantiateViewControllerWithIdentifier:VcName];
+
+    //present it
+
+    [self presentViewController:NavCV animated:YES completion:nil];
+    
 }
 
 /*

@@ -6,13 +6,13 @@
 //  Copyright © 2015 Dello. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TabBarViewController.h"
 
-@interface ViewController ()
+@interface TabBarViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TabBarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,7 +33,7 @@
 
     UITabBarController *listTabBar = [listStoryBoard instantiateViewControllerWithIdentifier:@"ListNavController"];
     [self addChildViewController:listTabBar];
-    listTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"profile.png"] scaledToSize:CGSizeMake(35, 35)];
+    listTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"listTab.png"] scaledToSize:CGSizeMake(35, 35)];
     listTabBar.tabBarItem.title = @"List";
 ;
 
@@ -42,7 +42,7 @@
 
     UITabBarController *groupTabBar = [groupStoryBoard instantiateViewControllerWithIdentifier:@"GroupNavController"];
     [self addChildViewController:groupTabBar];
-    groupTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"profile.png"] scaledToSize:CGSizeMake(35, 35)];
+    groupTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"groupTab.png"] scaledToSize:CGSizeMake(35, 35)];
     groupTabBar.tabBarItem.title = @"Groups";
     groupTabBar.tabBarItem.enabled = NO;
 
@@ -70,7 +70,7 @@
 
     UITabBarController *profileTabBar = [profileStoryBoard instantiateViewControllerWithIdentifier:@"ProfileNavController"];
     [self addChildViewController:profileTabBar];
-    profileTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"profile.png"] scaledToSize:CGSizeMake(35, 35)];
+    profileTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"profileTab.png"] scaledToSize:CGSizeMake(35, 35)];
     profileTabBar.tabBarItem.title = @"Me";
     profileTabBar.tabBarItem.enabled = NO;
 
