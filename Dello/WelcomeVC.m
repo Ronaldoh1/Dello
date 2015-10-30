@@ -63,6 +63,7 @@
             NSLog(@"User signed up and logged in through Facebook!");
         } else {
             NSLog(@"User logged in through Facebook!");
+            
             [self presentViewControllerWithName:@"MainTabBarController" andWithStoryboardName:@"Main"];
 
         }

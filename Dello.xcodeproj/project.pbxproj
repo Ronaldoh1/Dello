@@ -16,6 +16,7 @@
 		F25D5C511BE3882900AFF575 /* groupTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C4E1BE3882900AFF575 /* groupTab.png */; };
 		F25D5C521BE3882900AFF575 /* listTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C4F1BE3882900AFF575 /* listTab.png */; };
 		F25D5C531BE3882900AFF575 /* profileTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C501BE3882900AFF575 /* profileTab.png */; };
+		F25D5C561BE3F4EC00AFF575 /* ProfileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5C551BE3F4EC00AFF575 /* ProfileInfo.m */; };
 		F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */; };
 		F2B9116E1BE06D0000FABD42 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116D1BE06D0000FABD42 /* profile.png */; };
 		F2B911701BE0706900FABD42 /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116F1BE0706900FABD42 /* Group.storyboard */; };
@@ -26,7 +27,6 @@
 		F2B911801BE173DE00FABD42 /* SignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B9117F1BE173DE00FABD42 /* SignUpVC.m */; };
 		F2B911831BE1746900FABD42 /* ListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B911821BE1746900FABD42 /* ListTVC.m */; };
 		F2B911861BE1751E00FABD42 /* GroupTC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B911851BE1751E00FABD42 /* GroupTC.m */; };
-		F2B911891BE1755500FABD42 /* ProfileTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B911881BE1755500FABD42 /* ProfileTVC.m */; };
 		F2B9118C1BE1756900FABD42 /* ResultsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B9118B1BE1756900FABD42 /* ResultsTVC.m */; };
 		F2B911931BE182B100FABD42 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B911921BE182B100FABD42 /* Welcome.storyboard */; };
 		F2B911961BE182D500FABD42 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B911951BE182D500FABD42 /* WelcomeVC.m */; };
@@ -67,6 +67,8 @@
 		F25D5C4E1BE3882900AFF575 /* groupTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groupTab.png; sourceTree = "<group>"; };
 		F25D5C4F1BE3882900AFF575 /* listTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listTab.png; sourceTree = "<group>"; };
 		F25D5C501BE3882900AFF575 /* profileTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileTab.png; sourceTree = "<group>"; };
+		F25D5C541BE3F4EC00AFF575 /* ProfileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileInfo.h; sourceTree = "<group>"; };
+		F25D5C551BE3F4EC00AFF575 /* ProfileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileInfo.m; sourceTree = "<group>"; };
 		F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = ../../../Public/Tutorial.storyboard; sourceTree = "<group>"; };
 		F2B9116D1BE06D0000FABD42 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		F2B9116F1BE0706900FABD42 /* Group.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Group.storyboard; path = ../Group.storyboard; sourceTree = "<group>"; };
@@ -81,8 +83,6 @@
 		F2B911821BE1746900FABD42 /* ListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTVC.m; sourceTree = "<group>"; };
 		F2B911841BE1751E00FABD42 /* GroupTC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupTC.h; sourceTree = "<group>"; };
 		F2B911851BE1751E00FABD42 /* GroupTC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupTC.m; sourceTree = "<group>"; };
-		F2B911871BE1755500FABD42 /* ProfileTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTVC.h; sourceTree = "<group>"; };
-		F2B911881BE1755500FABD42 /* ProfileTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTVC.m; sourceTree = "<group>"; };
 		F2B9118A1BE1756900FABD42 /* ResultsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTVC.h; sourceTree = "<group>"; };
 		F2B9118B1BE1756900FABD42 /* ResultsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTVC.m; sourceTree = "<group>"; };
 		F2B911921BE182B100FABD42 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
@@ -271,8 +271,8 @@
 			isa = PBXGroup;
 			children = (
 				F2B911761BE0774900FABD42 /* Profile.storyboard */,
-				F2B911871BE1755500FABD42 /* ProfileTVC.h */,
-				F2B911881BE1755500FABD42 /* ProfileTVC.m */,
+				F25D5C541BE3F4EC00AFF575 /* ProfileInfo.h */,
+				F25D5C551BE3F4EC00AFF575 /* ProfileInfo.m */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -578,11 +578,11 @@
 				F2B911861BE1751E00FABD42 /* GroupTC.m in Sources */,
 				F2B9119B1BE1F5BE00FABD42 /* TutorialPageVC.m in Sources */,
 				F2B911801BE173DE00FABD42 /* SignUpVC.m in Sources */,
-				F2B911891BE1755500FABD42 /* ProfileTVC.m in Sources */,
 				F2BD664A1BDDBF9000D189F3 /* TabBarViewController.m in Sources */,
 				F2BD66471BDDBF9000D189F3 /* AppDelegate.m in Sources */,
 				F2B9117D1BE173BD00FABD42 /* SignInVC.m in Sources */,
 				F2B9118C1BE1756900FABD42 /* ResultsTVC.m in Sources */,
+				F25D5C561BE3F4EC00AFF575 /* ProfileInfo.m in Sources */,
 				F25D5C341BE29E6700AFF575 /* User.m in Sources */,
 				F2BD66501BDDBF9000D189F3 /* Dello.xcdatamodeld in Sources */,
 				F2B911961BE182D500FABD42 /* WelcomeVC.m in Sources */,

@@ -39,6 +39,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uhq-wN-hdS" id="dcI-8J-b9w"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9da-QA-KO7">
                                 <rect key="frame" x="16" y="392" width="288" height="19"/>
@@ -61,13 +64,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sY7-9D-YJQ">
                                 <rect key="frame" x="0.0" y="258" width="320" height="50"/>
                                 <animations/>
-                                <color key="backgroundColor" name="windowFrameColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="adK-vR-c9y"/>
                                 </constraints>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onSignInButtonTapped:" destination="uhq-wN-hdS" eventType="touchUpInside" id="JTD-Cq-M7o"/>
@@ -93,6 +96,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uhq-wN-hdS" id="XXN-vl-fhS"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <animations/>

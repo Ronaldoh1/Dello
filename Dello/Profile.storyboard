@@ -3,60 +3,94 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
-        <scene sceneID="EWw-Aa-LhV">
+        <!--Profile-->
+        <scene sceneID="JvU-h1-rTo">
             <objects>
-                <tableViewController id="rgk-UR-Vqb" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XZi-Ix-RhO">
+                <viewController id="eC8-uu-CUh" customClass="ProfileInfo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rjw-qE-qed"/>
+                        <viewControllerLayoutGuide type="bottom" id="7D1-mc-M6O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fbx-Dp-D8k">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="v7P-nf-1JH">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v7P-nf-1JH" id="RcO-6I-ifi">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpU-Nz-D5j">
+                                <rect key="frame" x="16" y="92" width="288" height="30"/>
                                 <animations/>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="rgk-UR-Vqb" id="8Zp-yV-gzg"/>
-                            <outlet property="delegate" destination="rgk-UR-Vqb" id="N3Y-RC-4Lo"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="bGV-jD-6wt"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7UU-1l-aEc">
+                                <rect key="frame" x="16" y="130" width="288" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9H5-ND-ZWW">
+                                <rect key="frame" x="16" y="168" width="288" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Male"/>
+                                    <segment title="Female"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.2470588235" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9H5-ND-ZWW" firstAttribute="trailing" secondItem="Fbx-Dp-D8k" secondAttribute="trailingMargin" id="0d3-hb-O1M"/>
+                            <constraint firstItem="lpU-Nz-D5j" firstAttribute="trailing" secondItem="Fbx-Dp-D8k" secondAttribute="trailingMargin" id="5iY-WN-Li7"/>
+                            <constraint firstItem="7UU-1l-aEc" firstAttribute="trailing" secondItem="Fbx-Dp-D8k" secondAttribute="trailingMargin" id="Bin-e5-dGI"/>
+                            <constraint firstItem="9H5-ND-ZWW" firstAttribute="top" secondItem="7UU-1l-aEc" secondAttribute="bottom" constant="8" id="Gam-xH-dr5"/>
+                            <constraint firstItem="lpU-Nz-D5j" firstAttribute="top" secondItem="Rjw-qE-qed" secondAttribute="bottom" constant="28" id="LYi-Hk-Nyr"/>
+                            <constraint firstItem="lpU-Nz-D5j" firstAttribute="leading" secondItem="Fbx-Dp-D8k" secondAttribute="leadingMargin" id="U17-dv-P3L"/>
+                            <constraint firstItem="9H5-ND-ZWW" firstAttribute="leading" secondItem="Fbx-Dp-D8k" secondAttribute="leadingMargin" id="pAI-Ch-Zfu"/>
+                            <constraint firstItem="7UU-1l-aEc" firstAttribute="top" secondItem="lpU-Nz-D5j" secondAttribute="bottom" constant="8" id="ses-uc-7gC"/>
+                            <constraint firstItem="7UU-1l-aEc" firstAttribute="leading" secondItem="Fbx-Dp-D8k" secondAttribute="leadingMargin" id="zxv-97-RKr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="Bff-4t-Jvj">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="DCm-5U-8Ym">
+                            <connections>
+                                <action selector="onDoneButtonTapped:" destination="eC8-uu-CUh" id="BJb-aY-Ii6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C7D-dE-qOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <outlet property="ageTextfield" destination="7UU-1l-aEc" id="5iW-1D-7oK"/>
+                        <outlet property="genderSelector" destination="9H5-ND-ZWW" id="1ce-zH-HIT"/>
+                        <outlet property="nameTextfield" destination="lpU-Nz-D5j" id="KA6-cT-lQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n8Q-tK-igb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1155" y="539"/>
+            <point key="canvasLocation" x="1737" y="520"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="j2N-Xg-IUa">
+        <scene sceneID="131-VG-Kg1">
             <objects>
-                <navigationController storyboardIdentifier="ProfileNavController" automaticallyAdjustsScrollViewInsets="NO" id="pUg-TW-MLV" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProfileInfoNavVC" automaticallyAdjustsScrollViewInsets="NO" id="0vZ-Bk-oUY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rRp-aA-AWH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eer-t5-7Hs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="rgk-UR-Vqb" kind="relationship" relationship="rootViewController" id="pJI-rC-3dc"/>
+                        <segue destination="eC8-uu-CUh" kind="relationship" relationship="rootViewController" id="HTU-41-UQS"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWs-0g-jBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGM-Eq-D2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="539"/>
+            <point key="canvasLocation" x="1224" y="520"/>
         </scene>
     </scenes>
 </document>

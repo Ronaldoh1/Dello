@@ -50,6 +50,9 @@
                                         <exclude reference="4eG-OF-chX"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="Dlu-Vh-IHL" id="7IH-gD-PaT"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n89-o6-6Q8">
                                 <rect key="frame" x="0.0" y="229" width="320" height="40"/>
@@ -60,6 +63,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Dlu-Vh-IHL" id="f9c-LC-gwm"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vi3-j9-cg5">
                                 <rect key="frame" x="0.0" y="267" width="320" height="40"/>
@@ -70,11 +76,14 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Dlu-Vh-IHL" id="Ooy-TC-7R2"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWt-Tx-ivT">
                                 <rect key="frame" x="0.0" y="309" width="320" height="50"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="RGt-jT-vNg"/>
                                 </constraints>
