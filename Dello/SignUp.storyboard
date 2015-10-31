@@ -36,7 +36,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e5b-pg-Ceg">
-                                <rect key="frame" x="0.0" y="191" width="320" height="40"/>
+                                <rect key="frame" x="0.0" y="233" width="320" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -55,7 +55,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n89-o6-6Q8">
-                                <rect key="frame" x="0.0" y="229" width="320" height="40"/>
+                                <rect key="frame" x="0.0" y="271" width="320" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -68,7 +68,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vi3-j9-cg5">
-                                <rect key="frame" x="0.0" y="267" width="320" height="40"/>
+                                <rect key="frame" x="0.0" y="309" width="320" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -81,7 +81,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWt-Tx-ivT">
-                                <rect key="frame" x="0.0" y="309" width="320" height="50"/>
+                                <rect key="frame" x="-4" y="351" width="328" height="50"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -110,37 +110,47 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="NDl-ke-ESg">
-                                <rect key="frame" x="11" y="78" width="296" height="105"/>
+                                <rect key="frame" x="89" y="84" width="140" height="140"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="105" id="JZB-AP-OOi"/>
+                                    <constraint firstAttribute="height" constant="140" id="JZB-AP-OOi"/>
+                                    <constraint firstAttribute="width" constant="140" id="W93-Gi-TqV"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.24705882352941178" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NDl-ke-ESg" firstAttribute="trailing" secondItem="yTv-7r-1VR" secondAttribute="trailingMargin" constant="3" id="13P-Lg-7AD"/>
+                            <constraint firstItem="NDl-ke-ESg" firstAttribute="trailing" secondItem="yTv-7r-1VR" secondAttribute="trailingMargin" constant="11" id="13P-Lg-7AD"/>
                             <constraint firstItem="ekO-sE-IfK" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" id="1c8-Fr-UKS"/>
-                            <constraint firstAttribute="centerY" secondItem="n89-o6-6Q8" secondAttribute="centerY" constant="-9" id="3LW-bH-csh"/>
+                            <constraint firstAttribute="centerY" secondItem="n89-o6-6Q8" secondAttribute="centerY" constant="-51" id="3LW-bH-csh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n89-o6-6Q8" secondAttribute="trailing" constant="-16" id="4pV-H0-56P"/>
                             <constraint firstItem="e5b-pg-Ceg" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-16" id="68p-DA-zjT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mWt-Tx-ivT" secondAttribute="trailing" constant="-16" id="8gB-vY-pza"/>
+                            <constraint firstItem="NDl-ke-ESg" firstAttribute="centerY" secondItem="yTv-7r-1VR" secondAttribute="centerY" constant="-86" id="7Mk-Ux-n23"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mWt-Tx-ivT" secondAttribute="trailing" constant="-20" id="8gB-vY-pza"/>
                             <constraint firstAttribute="centerY" secondItem="z0t-aI-8Zg" secondAttribute="centerY" constant="-142.5" id="B0P-LA-FcF"/>
-                            <constraint firstItem="mWt-Tx-ivT" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-16" id="EWF-1H-tPj"/>
-                            <constraint firstItem="NDl-ke-ESg" firstAttribute="top" secondItem="q2d-aI-jCg" secondAttribute="bottom" constant="14" id="HxS-fk-htG"/>
+                            <constraint firstItem="mWt-Tx-ivT" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-20" id="EWF-1H-tPj"/>
                             <constraint firstItem="s5g-Ya-A0m" firstAttribute="top" secondItem="ekO-sE-IfK" secondAttribute="bottom" constant="41" id="MvM-K3-5Pm"/>
+                            <constraint firstItem="NDl-ke-ESg" firstAttribute="centerX" secondItem="yTv-7r-1VR" secondAttribute="centerX" constant="-1" id="NAD-ns-B5I"/>
                             <constraint firstItem="ekO-sE-IfK" firstAttribute="trailing" secondItem="yTv-7r-1VR" secondAttribute="trailingMargin" id="Njb-fP-Cvt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vi3-j9-cg5" secondAttribute="trailing" constant="-16" id="Q62-Ht-XGR"/>
                             <constraint firstItem="n89-o6-6Q8" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-16" id="RaT-UM-kIc"/>
-                            <constraint firstItem="NDl-ke-ESg" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-5" id="WSO-hf-nPS"/>
-                            <constraint firstAttribute="centerY" secondItem="mWt-Tx-ivT" secondAttribute="centerY" constant="-94" id="YyZ-82-mCD"/>
-                            <constraint firstAttribute="centerY" secondItem="e5b-pg-Ceg" secondAttribute="centerY" constant="29" id="b66-hf-yit"/>
-                            <constraint firstAttribute="centerY" secondItem="vi3-j9-cg5" secondAttribute="centerY" constant="-47" id="e1Y-IB-y80"/>
+                            <constraint firstItem="NDl-ke-ESg" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-13" id="WSO-hf-nPS"/>
+                            <constraint firstAttribute="centerY" secondItem="mWt-Tx-ivT" secondAttribute="centerY" constant="-136" id="YyZ-82-mCD"/>
+                            <constraint firstAttribute="centerY" secondItem="e5b-pg-Ceg" secondAttribute="centerY" constant="-13" id="b66-hf-yit"/>
+                            <constraint firstAttribute="centerY" secondItem="vi3-j9-cg5" secondAttribute="centerY" constant="-89" id="e1Y-IB-y80"/>
                             <constraint firstAttribute="centerX" secondItem="z0t-aI-8Zg" secondAttribute="centerX" constant="1" id="gJa-rh-uGf"/>
+                            <constraint firstItem="NDl-ke-ESg" firstAttribute="centerY" secondItem="yTv-7r-1VR" secondAttribute="centerY" constant="-86" id="qr6-zr-BYm"/>
                             <constraint firstItem="vi3-j9-cg5" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-16" id="zCP-ql-RRc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e5b-pg-Ceg" secondAttribute="trailing" constant="-16" id="zhO-Mb-5bL"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="13P-Lg-7AD"/>
+                                <exclude reference="7Mk-Ux-n23"/>
+                                <exclude reference="WSO-hf-nPS"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Let's Get Started" id="Hg4-W9-E5O">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" style="done" id="EL3-Ka-Xty">
@@ -184,6 +194,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="clearLogo.png" width="5518" height="5518"/>
+        <image name="clearLogo.png" width="600" height="600"/>
     </resources>
 </document>

@@ -63,6 +63,7 @@
             NSLog(@"User signed up and logged in through Facebook!");
         } else {
             NSLog(@"User logged in through Facebook!");
+
             
             [self presentViewControllerWithName:@"MainTabBarController" andWithStoryboardName:@"Main"];
 
@@ -76,11 +77,11 @@
 -(void)presentViewControllerWithName:(NSString *)VcName andWithStoryboardName:(NSString *)SbName{
 
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:SbName bundle:nil];
-    UIViewController *NavCV = [storyBoard instantiateViewControllerWithIdentifier:VcName];
+    UIViewController *mainTabbar = [storyBoard instantiateViewControllerWithIdentifier:VcName];
 
     //present it
 
-    [self presentViewController:NavCV animated:YES completion:nil];
+    [self presentViewController:mainTabbar animated:YES completion:nil];
     
 }
 

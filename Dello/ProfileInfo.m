@@ -28,9 +28,20 @@
 }
 - (IBAction)onDoneButtonTapped:(UIBarButtonItem *)sender {
 
+    [self presentViewControllerWithName:@"MainTabBarController" andWithStoryboardName:@"Main"];
     
 }
+//Present VC with storyboard name and NavigationViewController
 
+-(void)presentViewControllerWithName:(NSString *)VcName andWithStoryboardName:(NSString *)SbName{
+
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:SbName bundle:nil];
+    UIViewController *NavCV = [storyBoard instantiateViewControllerWithIdentifier:VcName];
+
+    //present it
+
+    [self presentViewController:NavCV animated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 

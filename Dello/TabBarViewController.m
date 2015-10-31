@@ -34,7 +34,7 @@
     UITabBarController *listTabBar = [listStoryBoard instantiateViewControllerWithIdentifier:@"ListNavController"];
     [self addChildViewController:listTabBar];
     listTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"listTab.png"] scaledToSize:CGSizeMake(35, 35)];
-    listTabBar.tabBarItem.title = @"List";
+    listTabBar.tabBarItem.title = @"Lists";
 ;
 
     //Second Tab Bar
@@ -52,27 +52,28 @@
 
     UITabBarController *customTabBar = [customListstoryBoard instantiateViewControllerWithIdentifier:@"CustomNavController"];
     [self addChildViewController:customTabBar];
-    customTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"profile.png"] scaledToSize:CGSizeMake(35, 35)];
-    customTabBar.tabBarItem.title = @"Custom";
+    customTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"resultTab.png"] scaledToSize:CGSizeMake(35, 35)];
+    customTabBar.tabBarItem.title = @"Results";
     customTabBar.tabBarItem.enabled = NO;
 
     //Fourth Tab Bar
     UIStoryboard *resultsStoryBoard = [UIStoryboard storyboardWithName:@"Result" bundle:nil];
 
+
     UITabBarController *resultsTabBar = [resultsStoryBoard instantiateViewControllerWithIdentifier:@"ResultNavController"];
     [self addChildViewController:resultsTabBar];
-    resultsTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"profile.png"] scaledToSize:CGSizeMake(35, 35)];
-    resultsTabBar.tabBarItem.title = @"Results";
+    resultsTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"mapTab.png"] scaledToSize:CGSizeMake(35, 35)];
+    resultsTabBar.tabBarItem.title = @"Map";
     resultsTabBar.tabBarItem.enabled = NO;
 
     //Fifth Tab Bar
-    UIStoryboard *profileStoryBoard = [UIStoryboard storyboardWithName:@"Profile" bundle:nil];
+    UIStoryboard *moreStoryboard = [UIStoryboard storyboardWithName:@"More" bundle:nil];
 
-    UITabBarController *profileTabBar = [profileStoryBoard instantiateViewControllerWithIdentifier:@"ProfileNavController"];
-    [self addChildViewController:profileTabBar];
-    profileTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"profileTab.png"] scaledToSize:CGSizeMake(35, 35)];
-    profileTabBar.tabBarItem.title = @"Me";
-    profileTabBar.tabBarItem.enabled = NO;
+    UITabBarController *moreTabBar = [moreStoryboard instantiateViewControllerWithIdentifier:@"MoreNavController"];
+    [self addChildViewController:moreTabBar];
+    moreTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"moreTab.png"] scaledToSize:CGSizeMake(35, 35)];
+    moreTabBar.tabBarItem.title = @"More";
+    moreTabBar.tabBarItem.enabled = NO;
 
 
 
