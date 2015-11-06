@@ -14,7 +14,12 @@
 @dynamic profileImage;
 @dynamic gender;
 @dynamic age;
-@dynamic isFBUser;
+@dynamic location;
+@dynamic favoriteSpot;
+@dynamic friendsArray;
+@dynamic isPremium;
+@dynamic isFbUser;
+
 
 //Register the Class
 

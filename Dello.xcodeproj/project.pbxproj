@@ -28,6 +28,7 @@
 		F25D5C8C1BE4162100AFF575 /* clearLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C8B1BE4162100AFF575 /* clearLogo.png */; };
 		F25D5C901BE41EE500AFF575 /* mapTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C8F1BE41EE500AFF575 /* mapTab.png */; };
 		F25D5C921BE41F6800AFF575 /* moreTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C911BE41F6800AFF575 /* moreTab.png */; };
+		F25D5CAB1BE6D92200AFF575 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5CAA1BE6D92200AFF575 /* List.m */; };
 		F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */; };
 		F2B9116E1BE06D0000FABD42 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116D1BE06D0000FABD42 /* profile.png */; };
 		F2B911701BE0706900FABD42 /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116F1BE0706900FABD42 /* Group.storyboard */; };
@@ -92,6 +93,8 @@
 		F25D5C8B1BE4162100AFF575 /* clearLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearLogo.png; sourceTree = "<group>"; };
 		F25D5C8F1BE41EE500AFF575 /* mapTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapTab.png; sourceTree = "<group>"; };
 		F25D5C911BE41F6800AFF575 /* moreTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moreTab.png; sourceTree = "<group>"; };
+		F25D5CA91BE6D92200AFF575 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		F25D5CAA1BE6D92200AFF575 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
 		F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = ../../../Public/Tutorial.storyboard; sourceTree = "<group>"; };
 		F2B9116D1BE06D0000FABD42 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		F2B9116F1BE0706900FABD42 /* Group.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Group.storyboard; path = ../Group.storyboard; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 			children = (
 				F25D5C321BE29E6700AFF575 /* User.h */,
 				F25D5C331BE29E6700AFF575 /* User.m */,
+				F25D5CA91BE6D92200AFF575 /* List.h */,
+				F25D5CAA1BE6D92200AFF575 /* List.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -641,6 +646,7 @@
 				F25D5C591BE404B300AFF575 /* MoreTableViewController.m in Sources */,
 				F2B911961BE182D500FABD42 /* WelcomeVC.m in Sources */,
 				F2B9119E1BE1F5FB00FABD42 /* PageContentVC.m in Sources */,
+				F25D5CAB1BE6D92200AFF575 /* List.m in Sources */,
 				F2BD66441BDDBF9000D189F3 /* main.m in Sources */,
 				F2B911831BE1746900FABD42 /* ListTVC.m in Sources */,
 			);
