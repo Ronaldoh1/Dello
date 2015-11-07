@@ -8,6 +8,7 @@
 
 #import "WelcomeVC.h"
 #import <Parse.h>
+#import "User.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 @interface WelcomeVC ()
@@ -30,6 +31,14 @@
 
 
 
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+
+    if ([User currentUser] != nil) {
+        [self presentViewControllerWithName:@"MainTabBarController" andWithStoryboardName:@"Main"];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,8 +7,10 @@
 //
 
 #import "ListTVC.h"
+#import "ListCostumeCell.h"
 
 @interface ListTVC ()
+@property NSMutableArray *listsArray;
 
 @end
 
@@ -22,6 +24,14 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    //setup profileImage
+
+    [self setUpProfileImage];
+
+    self.listsArray = [NSMutableArray arrayWithObjects:@"Friday night",@"Gifts for Mom", @"Birthday Bash", @"Future Trip", nil];
+
+
     [self enableTabBars];
 }
 -(void)viewDidAppear:(BOOL)animated{
@@ -47,22 +57,89 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.listsArray.count;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+
+- (ListCostumeCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ListCostumeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+
+    cell.listTitle.text = self.listsArray[indexPath.row];
+
     return cell;
 }
-*/
+
+
+
+
+
+#pragma mark - Helper Methods
+
+/*Set up left Tab Button */
+ 
+ //helper method to set up profile image button
+ -(void)setUpProfileImage{
+
+// if (self.currentUser != nil){
+// //create an image and assign it to defualt image
+//
+// [self getUsersProfileImage];
+//
+//
+// }else if (self.currentUser == nil){
+//
+//
+// self.tempImage = [UIImage imageNamed:@"defaultImage.png"];
+//
+// }
+
+
+     UIImage *profileImage = [UIImage imageNamed:@"profileImage.png"];
+
+
+ //create button frame
+ CGRect buttonFrame = CGRectMake(0, 0, 40, 40);
+
+ //Create left Button
+ UIButton *button = [[UIButton alloc] initWithFrame:buttonFrame];
+
+ //make the button rounded
+ button.layer.cornerRadius = button.frame.size.height / 2;
+ button.layer.masksToBounds = YES;
+ button.layer.borderWidth = 2.0;
+ button.layer.borderColor = [UIColor colorWithRed:12.0/255.0 green:134/255.0 blue:243/255.0 alpha:1].CGColor;
+
+ [button setImage:profileImage forState:UIControlStateNormal];
+ [button reloadInputViews];
+
+ //add at tap gesture recognizer to the left button
+ UITapGestureRecognizer *tapGesture =
+ [[UITapGestureRecognizer alloc] initWithTarget:self
+ action:@selector(profileImageTapped)];
+ [button addGestureRecognizer:tapGesture];
+
+
+ //create a custom view for the button
+ UIView *profileButtonView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+ profileButtonView.bounds = CGRectOffset(profileButtonView.bounds, 10, 0);
+
+ //add the button to the custom view
+ [profileButtonView addSubview:button];
+
+ UIBarButtonItem *profileButtonItem = [[UIBarButtonItem alloc]initWithCustomView:profileButtonView];
+
+ self.navigationItem.leftBarButtonItem = profileButtonItem;
+
+
+ }
+-(void)profileImageTapped{
+    NSLog(@"ProfileImage Was tapped");
+}
+
 
 /*
 // Override to support conditional editing of the table view.

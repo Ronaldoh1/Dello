@@ -58,6 +58,10 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
     }
     
 }
+- (IBAction)onSignUpButtonTapped:(UIButton *)sender {
+
+    [self presentViewControllerWithName:@"SignUpNavVC" andWithStoryboardName:@"SignUp"];
+}
 
 #pragma mark - Helper methods 
 
@@ -101,22 +105,16 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
     //present it
 
     [self presentViewController:NavCV animated:YES completion:nil];
-    
 }
 
 #pragma Marks - hiding keyboard
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
     CGRect textFieldRect =
     [self.view.window convertRect:textField.bounds fromView:textField];
-    CGRect viewRect =
-    [self.view.window convertRect:self.view.bounds fromView:self.view];
+    CGRect viewRect = [self.view.window convertRect:self.view.bounds fromView:self.view];
     CGFloat midline = textFieldRect.origin.y + 0.5 * textFieldRect.size.height;
-    CGFloat numerator =
-    midline - viewRect.origin.y
-    - MINIMUM_SCROLL_FRACTION * viewRect.size.height;
-    CGFloat denominator =
-    (MAXIMUM_SCROLL_FRACTION - MINIMUM_SCROLL_FRACTION)
-    * viewRect.size.height;
+    CGFloat numerator = midline - viewRect.origin.y - MINIMUM_SCROLL_FRACTION * viewRect.size.height;
+    CGFloat denominator =(MAXIMUM_SCROLL_FRACTION - MINIMUM_SCROLL_FRACTION)* viewRect.size.height;
     CGFloat heightFraction = numerator / denominator;
     if (heightFraction < 0.0){
         heightFraction = 0.0;
