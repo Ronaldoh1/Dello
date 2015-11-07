@@ -76,7 +76,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="TGq-BJ-6fA">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="BaY-oA-nMZ"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="BaY-oA-nMZ">
+                            <connections>
+                                <action selector="onAddListButtonTapped:" destination="M53-Fn-EkC" id="8Xf-HS-IrU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>

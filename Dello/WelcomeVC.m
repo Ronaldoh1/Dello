@@ -23,11 +23,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    self.signInButton.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.signInButton.layer.borderWidth = 3.0;
-
-    self.signUpButton.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.signUpButton.layer.borderWidth = 3.0;
+//    self.signInButton.layer.borderColor = [UIColor whiteColor].CGColor;
+//    self.signInButton.layer.borderWidth = 3.0;
+//
+//    self.signUpButton.layer.borderColor = [UIColor whiteColor].CGColor;
+//    self.signUpButton.layer.borderWidth = 3.0;
 
 
 

@@ -18,18 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="791-7c-Je4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="791-7c-Je4">
                                 <rect key="frame" x="-4" y="0.0" width="328" height="480"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can't Make Up Your Mind?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzC-uy-EDi">
+                                <rect key="frame" x="0.0" y="190.5" width="320" height="99"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="kNJ-ic-PW2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QzC-uy-EDi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="3XV-GI-Gho"/>
                             <constraint firstItem="791-7c-Je4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="7rm-Zz-acS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QzC-uy-EDi" secondAttribute="trailing" constant="-16" id="9EB-vc-TCt"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="791-7c-Je4" secondAttribute="bottom" id="IV6-Dc-cOK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="791-7c-Je4" secondAttribute="trailing" constant="-20" id="etG-xC-D6E"/>
                             <constraint firstItem="791-7c-Je4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="m82-rG-QmP"/>
+                            <constraint firstItem="QzC-uy-EDi" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tpX-IJ-YhV"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -40,6 +53,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreen.png" width="727" height="1024"/>
+        <image name="background.png" width="727" height="1024"/>
     </resources>
 </document>

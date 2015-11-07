@@ -30,6 +30,7 @@
 - (IBAction)onAddItemButttonTapp:(UIBarButtonItem *)sender {
 
     NSLog(@"Tapped item");
+    [self displayAlertMessage:@"HI" andWith:@"boo"];
 }
 
 #pragma mark - Table view data source
@@ -100,6 +101,29 @@
     [self.view addSubview:button];
 
     return button;
+}
+
+/*AlertController for adding an item*/
+
+-(void)displayAlertMessage:(NSString *)title andWith:(NSString *)message{
+
+    //1. Create a UIAlertController
+
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+
+    //2. Create a UIAlertController to be added to the alert.
+
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+
+        [alertController dismissViewControllerAnimated:YES completion:nil];
+    }];
+
+    //3. Add the action to the controller.
+    [alertController addAction:okAction];
+
+
+    [self presentViewController:alertController animated:YES completion:nil];
+    
 }
 
 @end

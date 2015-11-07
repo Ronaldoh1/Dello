@@ -8,6 +8,8 @@
 
 #import "ListTVC.h"
 #import "ListCostumeCell.h"
+#import "User.h"
+#import "List.h"
 
 @interface ListTVC ()
 @property NSMutableArray *listsArray;
@@ -138,9 +140,57 @@
  }
 -(void)profileImageTapped{
     NSLog(@"ProfileImage Was tapped");
+    [User logOut];
+}
+
+- (IBAction)onAddListButtonTapped:(UIBarButtonItem *)sender {
+    [self presentAlertControllerForNewList];
+
+    
 }
 
 
+#pragma mark - helper method
+
+/*AlertController for adding an item*/
+
+-(void)presentAlertControllerForNewList{
+
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@"New List?"
+                                  message:@"Enter a title and a short description"
+                                  preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction* ok = [UIAlertAction actionWithTitle:@"Continue" style:UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction * action) {
+
+                                                   [self.listsArray addObject:alert.textFields[0].text];
+                                                   [self.tableView reloadData];
+
+                                               }];
+    UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault
+                                                   handler:^(UIAlertAction * action) {
+                                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                                   }];
+
+    [alert addAction:ok];
+    [alert addAction:cancel];
+
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"List Title";
+    }];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"What's it about?";
+
+    }];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"Hash Tag Your List!";
+        
+    }];
+
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
