@@ -18,6 +18,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self setUpTabBars];
+
+    //Set navigation bar tint color
+
+
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+      
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -48,12 +56,12 @@
 
 
     //Third Tab Bar
-    UIStoryboard *customListstoryBoard = [UIStoryboard storyboardWithName:@"Custom" bundle:nil];
+    UIStoryboard *customListstoryBoard = [UIStoryboard storyboardWithName:@"Vote" bundle:nil];
 
-    UITabBarController *customTabBar = [customListstoryBoard instantiateViewControllerWithIdentifier:@"CustomNavController"];
+    UITabBarController *customTabBar = [customListstoryBoard instantiateViewControllerWithIdentifier:@"VoteNavController"];
     [self addChildViewController:customTabBar];
-    customTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"resultTab.png"] scaledToSize:CGSizeMake(35, 35)];
-    customTabBar.tabBarItem.title = @"Results";
+    customTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"voteTab.png"] scaledToSize:CGSizeMake(35, 35)];
+    customTabBar.tabBarItem.title = @"Vote";
     customTabBar.tabBarItem.enabled = NO;
 
     //Fourth Tab Bar
@@ -62,8 +70,8 @@
 
     UITabBarController *resultsTabBar = [resultsStoryBoard instantiateViewControllerWithIdentifier:@"ResultNavController"];
     [self addChildViewController:resultsTabBar];
-    resultsTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"mapTab.png"] scaledToSize:CGSizeMake(35, 35)];
-    resultsTabBar.tabBarItem.title = @"Map";
+    resultsTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"resulsTab.png"] scaledToSize:CGSizeMake(35, 35)];
+    resultsTabBar.tabBarItem.title = @"Results";
     resultsTabBar.tabBarItem.enabled = NO;
 
     //Fifth Tab Bar

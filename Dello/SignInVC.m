@@ -8,6 +8,7 @@
 
 #import "SignInVC.h"
 #import "User.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface SignInVC ()
 @property (weak, nonatomic) IBOutlet UITextField *emailTextfield;
@@ -30,6 +31,11 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
     // Do any additional setup after loading the view.
     //Initialize the user
     self.user = [PFUser new];
+
+    //Make textfields with rounded corners
+
+    [self.emailTextfield.layer setCornerRadius:14.0f];
+    [self.passwordTextfield.layer setCornerRadius:14.0f];
 }
 
 - (void)didReceiveMemoryWarning {

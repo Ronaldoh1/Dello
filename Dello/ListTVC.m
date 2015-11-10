@@ -27,6 +27,15 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
+    //setting image to Navigation Bar's title
+    UILabel *titleView = (UILabel *)self.navigationItem.titleView;
+    titleView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+    titleView.font = [UIFont fontWithName:@"Noteworthy" size:25];
+    titleView.text = @"Dello";
+    titleView.textColor = [UIColor colorWithRed:119.0/255.0 green:158.0/255.0 blue:203.0/255.0 alpha:1.0];
+    [self.navigationItem setTitleView:titleView];
+
+
     //setup profileImage
 
     [self setUpProfileImage];
@@ -34,10 +43,30 @@
     self.listsArray = [NSMutableArray arrayWithObjects:@"Friday night",@"Gifts for Mom", @"Birthday Bash", @"Future Trip", nil];
 
 
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:119.0/255.0 green:158.0/255.0 blue:203.0/255.0 alpha:1.0];
+
+
+
+
+
     [self enableTabBars];
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:YES];
+    //Change the global tint
+
+ 
+
+
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+
+//    UIImage *image = [UIImage imageNamed:@"delloName.png"];
+//    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+//    imageView.frame = CGRectMake(50, 0, 250, 37);
+//
+//    [self.navigationController.navigationBar addSubview:imageView];
 
 
 }
@@ -113,7 +142,7 @@
  button.layer.cornerRadius = button.frame.size.height / 2;
  button.layer.masksToBounds = YES;
  button.layer.borderWidth = 2.0;
- button.layer.borderColor = [UIColor colorWithRed:12.0/255.0 green:134/255.0 blue:243/255.0 alpha:1].CGColor;
+ button.layer.borderColor = [UIColor colorWithRed:119.0/255.0 green:158.0/255.0 blue:203.0/255.0 alpha:1.0].CGColor;
 
  [button setImage:profileImage forState:UIControlStateNormal];
  [button reloadInputViews];

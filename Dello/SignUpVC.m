@@ -29,6 +29,12 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    //Make the textfields rounded
+
+    [self.emailTextfield.layer setCornerRadius:14.0f];
+    [self.confirmPasswordTextfield.layer setCornerRadius:14.0f];
+    [self.passwordTextfield.layer setCornerRadius:14.0f];
 }
 
 - (void)didReceiveMemoryWarning {

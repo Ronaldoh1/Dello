@@ -1,18 +1,18 @@
 //
-//  GroupTC.m
+//  GroupTVC.m
 //  Dello
 //
-//  Created by Ronald Hernandez on 10/28/15.
+//  Created by Ronald Hernandez on 11/9/15.
 //  Copyright © 2015 Dello. All rights reserved.
 //
 
-#import "GroupTC.h"
+#import "GroupTVC.h"
 
-@interface GroupTC ()
+@interface GroupTVC ()
 
 @end
 
-@implementation GroupTC
+@implementation GroupTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +22,17 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    //setting image to Navigation Bar's title
+    UILabel *titleView = (UILabel *)self.navigationItem.titleView;
+    titleView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+    titleView.font = [UIFont fontWithName:@"Noteworthy" size:25];
+    titleView.text = @"Dello";
+    titleView.textColor = [UIColor colorWithRed:119.0/255.0 green:158.0/255.0 blue:203.0/255.0 alpha:1.0];
+    [self.navigationItem setTitleView:titleView];
+
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +43,19 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 1;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    
+
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
