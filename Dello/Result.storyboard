@@ -3,25 +3,66 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
         <scene sceneID="R0I-Hd-go1">
             <objects>
                 <tableViewController id="GsJ-dM-0OK" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cpS-Hp-c5A">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="121" sectionHeaderHeight="28" sectionFooterHeight="28" id="cpS-Hp-c5A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dPA-7l-hiQ">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="dPA-7l-hiQ">
+                                <rect key="frame" x="0.0" y="92" width="320" height="121"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dPA-7l-hiQ" id="Atf-rX-evR">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peQ-mT-XiR">
+                                            <rect key="frame" x="110" y="15" width="196" height="21"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="XOJ-Yc-lNU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Labelsfsdaffasdfasfdfdsff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYW-Gt-HUY">
+                                            <rect key="frame" x="110" y="36" width="196" height="69"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="69" id="R6l-Av-rt3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="xIg-2x-nH9">
+                                            <rect key="frame" x="8" y="10" width="100" height="100"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="XY1-Z0-yn9"/>
+                                                <constraint firstAttribute="width" constant="100" id="xX8-9b-FHm"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="xIg-2x-nH9" firstAttribute="leading" secondItem="Atf-rX-evR" secondAttribute="leadingMargin" id="3d5-AD-Yq1"/>
+                                        <constraint firstItem="peQ-mT-XiR" firstAttribute="top" secondItem="Atf-rX-evR" secondAttribute="topMargin" constant="7" id="6pG-PB-gQL"/>
+                                        <constraint firstItem="HYW-Gt-HUY" firstAttribute="leading" secondItem="xIg-2x-nH9" secondAttribute="trailing" constant="2" id="JGR-IH-c0R"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="HYW-Gt-HUY" secondAttribute="trailing" constant="6" id="NcL-Ts-Mic"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="peQ-mT-XiR" secondAttribute="trailing" constant="6" id="gPq-8g-9hm"/>
+                                        <constraint firstItem="xIg-2x-nH9" firstAttribute="top" secondItem="Atf-rX-evR" secondAttribute="topMargin" constant="2" id="iDL-w9-Z9v"/>
+                                        <constraint firstItem="peQ-mT-XiR" firstAttribute="leading" secondItem="xIg-2x-nH9" secondAttribute="trailing" constant="2" id="vHR-BK-R9r"/>
+                                        <constraint firstItem="HYW-Gt-HUY" firstAttribute="top" secondItem="peQ-mT-XiR" secondAttribute="bottom" id="wMq-sT-KqG"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                             </tableViewCell>
@@ -59,4 +100,7 @@
             <point key="canvasLocation" x="353" y="425"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="beerIcon.png" width="300" height="300"/>
+    </resources>
 </document>

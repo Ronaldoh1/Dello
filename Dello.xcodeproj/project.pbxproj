@@ -11,7 +11,6 @@
 		F25D5C341BE29E6700AFF575 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5C331BE29E6700AFF575 /* User.m */; };
 		F25D5C3A1BE2A75D00AFF575 /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C391BE2A75D00AFF575 /* launchScreen.png */; };
 		F25D5C561BE3F4EC00AFF575 /* ProfileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5C551BE3F4EC00AFF575 /* ProfileInfo.m */; };
-		F25D5C591BE404B300AFF575 /* MoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5C581BE404B300AFF575 /* MoreTableViewController.m */; };
 		F25D5C5B1BE404C000AFF575 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C5A1BE404C000AFF575 /* Discover.storyboard */; };
 		F25D5C761BE4111200AFF575 /* listTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C751BE4111200AFF575 /* listTab.png */; };
 		F25D5C861BE412BE00AFF575 /* groupTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C851BE412BE00AFF575 /* groupTab.png */; };
@@ -44,6 +43,9 @@
 		F2B2E6E51BF1B0F000153EC6 /* groupIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2B2E6E41BF1B0F000153EC6 /* groupIcon.jpg */; };
 		F2B2E6E81BF1B1B500153EC6 /* VoteCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2E6E71BF1B1B500153EC6 /* VoteCustomCell.m */; };
 		F2B2E6EE1BF1B51300153EC6 /* discoverTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B2E6ED1BF1B51300153EC6 /* discoverTab.png */; };
+		F2B2E6F11BF1DCA000153EC6 /* ResultsCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2E6F01BF1DCA000153EC6 /* ResultsCustomCell.m */; };
+		F2B2E6F71BF1DE3100153EC6 /* DiscoverTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2E6F61BF1DE3100153EC6 /* DiscoverTVC.m */; };
+		F2B2E6FA1BF1DE5400153EC6 /* DiscoverCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2E6F91BF1DE5400153EC6 /* DiscoverCustomCell.m */; };
 		F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */; };
 		F2B911701BE0706900FABD42 /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116F1BE0706900FABD42 /* Group.storyboard */; };
 		F2B911741BE075AF00FABD42 /* Vote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B911731BE075AF00FABD42 /* Vote.storyboard */; };
@@ -88,8 +90,6 @@
 		F25D5C391BE2A75D00AFF575 /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreen.png; sourceTree = "<group>"; };
 		F25D5C541BE3F4EC00AFF575 /* ProfileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileInfo.h; sourceTree = "<group>"; };
 		F25D5C551BE3F4EC00AFF575 /* ProfileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileInfo.m; sourceTree = "<group>"; };
-		F25D5C571BE404B300AFF575 /* MoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableViewController.h; sourceTree = "<group>"; };
-		F25D5C581BE404B300AFF575 /* MoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewController.m; sourceTree = "<group>"; };
 		F25D5C5A1BE404C000AFF575 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		F25D5C751BE4111200AFF575 /* listTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listTab.png; sourceTree = "<group>"; };
 		F25D5C851BE412BE00AFF575 /* groupTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groupTab.png; sourceTree = "<group>"; };
@@ -131,6 +131,12 @@
 		F2B2E6E61BF1B1B500153EC6 /* VoteCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteCustomCell.h; sourceTree = "<group>"; };
 		F2B2E6E71BF1B1B500153EC6 /* VoteCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteCustomCell.m; sourceTree = "<group>"; };
 		F2B2E6ED1BF1B51300153EC6 /* discoverTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discoverTab.png; sourceTree = "<group>"; };
+		F2B2E6EF1BF1DCA000153EC6 /* ResultsCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsCustomCell.h; sourceTree = "<group>"; };
+		F2B2E6F01BF1DCA000153EC6 /* ResultsCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsCustomCell.m; sourceTree = "<group>"; };
+		F2B2E6F51BF1DE3100153EC6 /* DiscoverTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTVC.h; sourceTree = "<group>"; };
+		F2B2E6F61BF1DE3100153EC6 /* DiscoverTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTVC.m; sourceTree = "<group>"; };
+		F2B2E6F81BF1DE5400153EC6 /* DiscoverCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverCustomCell.h; sourceTree = "<group>"; };
+		F2B2E6F91BF1DE5400153EC6 /* DiscoverCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverCustomCell.m; sourceTree = "<group>"; };
 		F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = ../../../Public/Tutorial.storyboard; sourceTree = "<group>"; };
 		F2B9116F1BE0706900FABD42 /* Group.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Group.storyboard; path = ../Group.storyboard; sourceTree = "<group>"; };
 		F2B911731BE075AF00FABD42 /* Vote.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Vote.storyboard; sourceTree = "<group>"; };
@@ -266,8 +272,10 @@
 			isa = PBXGroup;
 			children = (
 				F25D5C5A1BE404C000AFF575 /* Discover.storyboard */,
-				F25D5C571BE404B300AFF575 /* MoreTableViewController.h */,
-				F25D5C581BE404B300AFF575 /* MoreTableViewController.m */,
+				F2B2E6F81BF1DE5400153EC6 /* DiscoverCustomCell.h */,
+				F2B2E6F91BF1DE5400153EC6 /* DiscoverCustomCell.m */,
+				F2B2E6F51BF1DE3100153EC6 /* DiscoverTVC.h */,
+				F2B2E6F61BF1DE3100153EC6 /* DiscoverTVC.m */,
 			);
 			name = Discover;
 			sourceTree = "<group>";
@@ -386,6 +394,8 @@
 			isa = PBXGroup;
 			children = (
 				F2B911791BE0782E00FABD42 /* Result.storyboard */,
+				F2B2E6EF1BF1DCA000153EC6 /* ResultsCustomCell.h */,
+				F2B2E6F01BF1DCA000153EC6 /* ResultsCustomCell.m */,
 				F2B9118A1BE1756900FABD42 /* ResultsTVC.h */,
 				F2B9118B1BE1756900FABD42 /* ResultsTVC.m */,
 			);
@@ -703,6 +713,7 @@
 				F2B9119B1BE1F5BE00FABD42 /* TutorialPageVC.m in Sources */,
 				F2B911801BE173DE00FABD42 /* SignUpVC.m in Sources */,
 				F26E19E31BEE94E300900037 /* AddItemVC.m in Sources */,
+				F2B2E6F11BF1DCA000153EC6 /* ResultsCustomCell.m in Sources */,
 				F2BD664A1BDDBF9000D189F3 /* TabBarViewController.m in Sources */,
 				F2BD66471BDDBF9000D189F3 /* AppDelegate.m in Sources */,
 				F2B9117D1BE173BD00FABD42 /* SignInVC.m in Sources */,
@@ -713,14 +724,15 @@
 				F2B2E6E81BF1B1B500153EC6 /* VoteCustomCell.m in Sources */,
 				F26E19D51BED25E300900037 /* Group.m in Sources */,
 				F2BD66501BDDBF9000D189F3 /* Dello.xcdatamodeld in Sources */,
-				F25D5C591BE404B300AFF575 /* MoreTableViewController.m in Sources */,
 				F2B911961BE182D500FABD42 /* WelcomeVC.m in Sources */,
 				F2B2E6E01BF195E500153EC6 /* GroupTVC.m in Sources */,
 				F26E19D81BEE741D00900037 /* ListCostumeCell.m in Sources */,
 				F26E19D21BED1D3D00900037 /* Item.m in Sources */,
 				F2B9119E1BE1F5FB00FABD42 /* PageContentVC.m in Sources */,
 				F2B2E6D41BF143C000153EC6 /* GroupCustomCell.m in Sources */,
+				F2B2E6F71BF1DE3100153EC6 /* DiscoverTVC.m in Sources */,
 				F25D5CAB1BE6D92200AFF575 /* List.m in Sources */,
+				F2B2E6FA1BF1DE5400153EC6 /* DiscoverCustomCell.m in Sources */,
 				F2BD66441BDDBF9000D189F3 /* main.m in Sources */,
 				F2B911831BE1746900FABD42 /* ListTVC.m in Sources */,
 			);
