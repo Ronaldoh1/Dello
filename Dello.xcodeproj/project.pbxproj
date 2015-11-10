@@ -12,11 +12,10 @@
 		F25D5C3A1BE2A75D00AFF575 /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C391BE2A75D00AFF575 /* launchScreen.png */; };
 		F25D5C561BE3F4EC00AFF575 /* ProfileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5C551BE3F4EC00AFF575 /* ProfileInfo.m */; };
 		F25D5C591BE404B300AFF575 /* MoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5C581BE404B300AFF575 /* MoreTableViewController.m */; };
-		F25D5C5B1BE404C000AFF575 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C5A1BE404C000AFF575 /* More.storyboard */; };
+		F25D5C5B1BE404C000AFF575 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C5A1BE404C000AFF575 /* Discover.storyboard */; };
 		F25D5C761BE4111200AFF575 /* listTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C751BE4111200AFF575 /* listTab.png */; };
 		F25D5C861BE412BE00AFF575 /* groupTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C851BE412BE00AFF575 /* groupTab.png */; };
 		F25D5C8C1BE4162100AFF575 /* clearLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C8B1BE4162100AFF575 /* clearLogo.png */; };
-		F25D5C921BE41F6800AFF575 /* moreTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C911BE41F6800AFF575 /* moreTab.png */; };
 		F25D5CAB1BE6D92200AFF575 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5CAA1BE6D92200AFF575 /* List.m */; };
 		F26E19D21BED1D3D00900037 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F26E19D11BED1D3D00900037 /* Item.m */; };
 		F26E19D51BED25E300900037 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = F26E19D41BED25E300900037 /* Group.m */; };
@@ -43,6 +42,8 @@
 		F2B2E6E01BF195E500153EC6 /* GroupTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2E6DF1BF195E500153EC6 /* GroupTVC.m */; };
 		F2B2E6E31BF1AF4D00153EC6 /* VoteTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2E6E21BF1AF4D00153EC6 /* VoteTVC.m */; };
 		F2B2E6E51BF1B0F000153EC6 /* groupIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2B2E6E41BF1B0F000153EC6 /* groupIcon.jpg */; };
+		F2B2E6E81BF1B1B500153EC6 /* VoteCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2E6E71BF1B1B500153EC6 /* VoteCustomCell.m */; };
+		F2B2E6EE1BF1B51300153EC6 /* discoverTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B2E6ED1BF1B51300153EC6 /* discoverTab.png */; };
 		F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */; };
 		F2B911701BE0706900FABD42 /* Group.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9116F1BE0706900FABD42 /* Group.storyboard */; };
 		F2B911741BE075AF00FABD42 /* Vote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B911731BE075AF00FABD42 /* Vote.storyboard */; };
@@ -89,11 +90,10 @@
 		F25D5C551BE3F4EC00AFF575 /* ProfileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileInfo.m; sourceTree = "<group>"; };
 		F25D5C571BE404B300AFF575 /* MoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableViewController.h; sourceTree = "<group>"; };
 		F25D5C581BE404B300AFF575 /* MoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewController.m; sourceTree = "<group>"; };
-		F25D5C5A1BE404C000AFF575 /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		F25D5C5A1BE404C000AFF575 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		F25D5C751BE4111200AFF575 /* listTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listTab.png; sourceTree = "<group>"; };
 		F25D5C851BE412BE00AFF575 /* groupTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groupTab.png; sourceTree = "<group>"; };
 		F25D5C8B1BE4162100AFF575 /* clearLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearLogo.png; sourceTree = "<group>"; };
-		F25D5C911BE41F6800AFF575 /* moreTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moreTab.png; sourceTree = "<group>"; };
 		F25D5CA91BE6D92200AFF575 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		F25D5CAA1BE6D92200AFF575 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
 		F26E19D01BED1D3D00900037 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = ../Item.h; sourceTree = "<group>"; };
@@ -128,6 +128,9 @@
 		F2B2E6E11BF1AF4D00153EC6 /* VoteTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteTVC.h; sourceTree = "<group>"; };
 		F2B2E6E21BF1AF4D00153EC6 /* VoteTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteTVC.m; sourceTree = "<group>"; };
 		F2B2E6E41BF1B0F000153EC6 /* groupIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = groupIcon.jpg; sourceTree = "<group>"; };
+		F2B2E6E61BF1B1B500153EC6 /* VoteCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteCustomCell.h; sourceTree = "<group>"; };
+		F2B2E6E71BF1B1B500153EC6 /* VoteCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteCustomCell.m; sourceTree = "<group>"; };
+		F2B2E6ED1BF1B51300153EC6 /* discoverTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discoverTab.png; sourceTree = "<group>"; };
 		F2B9116A1BE061BD00FABD42 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = ../../../Public/Tutorial.storyboard; sourceTree = "<group>"; };
 		F2B9116F1BE0706900FABD42 /* Group.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Group.storyboard; path = ../Group.storyboard; sourceTree = "<group>"; };
 		F2B911731BE075AF00FABD42 /* Vote.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Vote.storyboard; sourceTree = "<group>"; };
@@ -251,7 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				F26E19F81BEECB4600900037 /* resulsTab.png */,
-				F25D5C911BE41F6800AFF575 /* moreTab.png */,
+				F2B2E6ED1BF1B51300153EC6 /* discoverTab.png */,
 				F25D5C851BE412BE00AFF575 /* groupTab.png */,
 				F26E19F41BEEC92C00900037 /* voteTab.png */,
 				F25D5C751BE4111200AFF575 /* listTab.png */,
@@ -259,14 +262,14 @@
 			name = "Tab Buttons";
 			sourceTree = "<group>";
 		};
-		F25D5C5C1BE404C600AFF575 /* More */ = {
+		F25D5C5C1BE404C600AFF575 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				F25D5C5A1BE404C000AFF575 /* More.storyboard */,
+				F25D5C5A1BE404C000AFF575 /* Discover.storyboard */,
 				F25D5C571BE404B300AFF575 /* MoreTableViewController.h */,
 				F25D5C581BE404B300AFF575 /* MoreTableViewController.m */,
 			);
-			name = More;
+			name = Discover;
 			sourceTree = "<group>";
 		};
 		F26E19DB1BEE7FF500900037 /* Icons */ = {
@@ -357,14 +360,16 @@
 			name = Group;
 			sourceTree = "<group>";
 		};
-		F2B911721BE075A300FABD42 /* Custom */ = {
+		F2B911721BE075A300FABD42 /* Vote */ = {
 			isa = PBXGroup;
 			children = (
 				F2B911731BE075AF00FABD42 /* Vote.storyboard */,
+				F2B2E6E61BF1B1B500153EC6 /* VoteCustomCell.h */,
+				F2B2E6E71BF1B1B500153EC6 /* VoteCustomCell.m */,
 				F2B2E6E11BF1AF4D00153EC6 /* VoteTVC.h */,
 				F2B2E6E21BF1AF4D00153EC6 /* VoteTVC.m */,
 			);
-			name = Custom;
+			name = Vote;
 			sourceTree = "<group>";
 		};
 		F2B911751BE0773900FABD42 /* Profile */ = {
@@ -439,10 +444,10 @@
 				F25D5C301BE2911700AFF575 /* Frameworks */,
 				F2B911691BE061A000FABD42 /* AppDelegate */,
 				F25D5C311BE29E4800AFF575 /* Data */,
-				F25D5C5C1BE404C600AFF575 /* More */,
+				F25D5C5C1BE404C600AFF575 /* Discover */,
 				F2B911781BE0781F00FABD42 /* Result */,
 				F2B911751BE0773900FABD42 /* Profile */,
-				F2B911721BE075A300FABD42 /* Custom */,
+				F2B911721BE075A300FABD42 /* Vote */,
 				F2B911711BE0706D00FABD42 /* Group */,
 				F2BD66711BDDC31A00D189F3 /* List */,
 				F2B911671BE0614800FABD42 /* Main */,
@@ -615,9 +620,9 @@
 				F2BD66521BDDBF9000D189F3 /* Assets.xcassets in Resources */,
 				F26E19EF1BEEB54300900037 /* signUpButton.png in Resources */,
 				F26E19F11BEEB55C00900037 /* facebookButton.png in Resources */,
+				F2B2E6EE1BF1B51300153EC6 /* discoverTab.png in Resources */,
 				F25D5C761BE4111200AFF575 /* listTab.png in Resources */,
 				F2BD666D1BDDC2E400D189F3 /* SignUp.storyboard in Resources */,
-				F25D5C921BE41F6800AFF575 /* moreTab.png in Resources */,
 				F26E19F91BEECB4600900037 /* resulsTab.png in Resources */,
 				F2BD66731BDDC35B00D189F3 /* List.storyboard in Resources */,
 				F26E19F31BEEC18600900037 /* delloName.png in Resources */,
@@ -625,7 +630,7 @@
 				F2B911701BE0706900FABD42 /* Group.storyboard in Resources */,
 				F26E19E91BEEB19700900037 /* background.png in Resources */,
 				F2BD664D1BDDBF9000D189F3 /* Main.storyboard in Resources */,
-				F25D5C5B1BE404C000AFF575 /* More.storyboard in Resources */,
+				F25D5C5B1BE404C000AFF575 /* Discover.storyboard in Resources */,
 				F25D5C8C1BE4162100AFF575 /* clearLogo.png in Resources */,
 				F2B911741BE075AF00FABD42 /* Vote.storyboard in Resources */,
 				F2B911931BE182B100FABD42 /* Welcome.storyboard in Resources */,
@@ -705,6 +710,7 @@
 				F25D5C561BE3F4EC00AFF575 /* ProfileInfo.m in Sources */,
 				F25D5C341BE29E6700AFF575 /* User.m in Sources */,
 				F2B2E6E31BF1AF4D00153EC6 /* VoteTVC.m in Sources */,
+				F2B2E6E81BF1B1B500153EC6 /* VoteCustomCell.m in Sources */,
 				F26E19D51BED25E300900037 /* Group.m in Sources */,
 				F2BD66501BDDBF9000D189F3 /* Dello.xcdatamodeld in Sources */,
 				F25D5C591BE404B300AFF575 /* MoreTableViewController.m in Sources */,

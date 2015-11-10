@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eNB-rG-r6p" id="hSH-4Q-Ojp">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -41,7 +41,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1h1-gg-7HU">
             <objects>
-                <navigationController storyboardIdentifier="MoreNavController" automaticallyAdjustsScrollViewInsets="NO" id="6Pk-gQ-QxD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DiscoverNavController" automaticallyAdjustsScrollViewInsets="NO" id="6Pk-gQ-QxD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mhK-BZ-1qd">

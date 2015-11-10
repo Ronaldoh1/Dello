@@ -3,47 +3,73 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--VoteTVC-->
         <scene sceneID="Pm1-r6-3f6">
             <objects>
-                <tableViewController id="G95-GE-ZBN" sceneMemberID="viewController">
+                <tableViewController id="G95-GE-ZBN" customClass="VoteTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="121" sectionHeaderHeight="28" sectionFooterHeight="28" id="Woa-oZ-c9l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="yL4-yu-sGZ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="121" id="yL4-yu-sGZ" customClass="VoteCustomCell">
                                 <rect key="frame" x="0.0" y="92" width="320" height="121"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yL4-yu-sGZ" id="lic-DH-RVw">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOF-Ze-2HX">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOF-Ze-2HX">
                                             <rect key="frame" x="110" y="15" width="196" height="21"/>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Viq-m7-qeL"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="Labelsfsdaffasdfasfdfdsff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZR-Te-nFK">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Labelsfsdaffasdfasfdfdsff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZR-Te-nFK">
                                             <rect key="frame" x="110" y="36" width="196" height="69"/>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="69" id="ma1-Rb-5PV"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beerIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="lzJ-Fj-OUl">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="lzJ-Fj-OUl">
                                             <rect key="frame" x="8" y="10" width="100" height="100"/>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="7pN-CR-8Nx"/>
+                                                <constraint firstAttribute="height" constant="100" id="imS-hk-tAN"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="kOF-Ze-2HX" firstAttribute="leading" secondItem="lzJ-Fj-OUl" secondAttribute="trailing" constant="2" id="2lh-Mi-8s1"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="kOF-Ze-2HX" secondAttribute="trailing" constant="6" id="3Gx-xC-JMi"/>
+                                        <constraint firstItem="lzJ-Fj-OUl" firstAttribute="leading" secondItem="lic-DH-RVw" secondAttribute="leadingMargin" id="7xf-aL-lru"/>
+                                        <constraint firstItem="lzJ-Fj-OUl" firstAttribute="top" secondItem="lic-DH-RVw" secondAttribute="topMargin" constant="2" id="EDL-J9-yUz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="bZR-Te-nFK" secondAttribute="trailing" constant="6" id="Xcw-kA-wdj"/>
+                                        <constraint firstItem="bZR-Te-nFK" firstAttribute="top" secondItem="kOF-Ze-2HX" secondAttribute="bottom" id="n0h-wA-GoR"/>
+                                        <constraint firstItem="bZR-Te-nFK" firstAttribute="leading" secondItem="lzJ-Fj-OUl" secondAttribute="trailing" constant="2" id="tv9-JV-BLY"/>
+                                        <constraint firstItem="kOF-Ze-2HX" firstAttribute="top" secondItem="lic-DH-RVw" secondAttribute="topMargin" constant="7" id="txM-FU-VNl"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="listDescription" destination="bZR-Te-nFK" id="ZG1-mh-42A"/>
+                                    <outlet property="listImage" destination="lzJ-Fj-OUl" id="fCN-ER-HlC"/>
+                                    <outlet property="listTitle" destination="kOF-Ze-2HX" id="cYf-S8-Uq5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -56,7 +82,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYE-Mh-joK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1193" y="472"/>
+            <point key="canvasLocation" x="1137" y="420"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DgK-Rt-co2">

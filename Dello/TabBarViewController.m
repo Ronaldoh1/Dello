@@ -75,13 +75,13 @@
     resultsTabBar.tabBarItem.enabled = NO;
 
     //Fifth Tab Bar
-    UIStoryboard *moreStoryboard = [UIStoryboard storyboardWithName:@"More" bundle:nil];
+    UIStoryboard *discoverStoryBoard = [UIStoryboard storyboardWithName:@"Discover" bundle:nil];
 
-    UITabBarController *moreTabBar = [moreStoryboard instantiateViewControllerWithIdentifier:@"MoreNavController"];
-    [self addChildViewController:moreTabBar];
-    moreTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"moreTab.png"] scaledToSize:CGSizeMake(35, 35)];
-    moreTabBar.tabBarItem.title = @"More";
-    moreTabBar.tabBarItem.enabled = NO;
+    UITabBarController *discoverTabBar = [discoverStoryBoard instantiateViewControllerWithIdentifier:@"DiscoverNavController"];
+    [self addChildViewController:discoverTabBar];
+    discoverTabBar.tabBarItem.image = [self imageWithImage:[UIImage imageNamed:@"discoverTab.png"] scaledToSize:CGSizeMake(35, 35)];
+    discoverTabBar.tabBarItem.title = @"Discover";
+    discoverTabBar.tabBarItem.enabled = NO;
 
 
 
