@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.addItemButton = [self createButtonWithTitle:@"+"];
+    self.addItemButton = [self createButtonWithTitle:@"Done"];
 
     [self.addItemButton addTarget:self action:@selector(addItemToList) forControlEvents:UIControlEventTouchUpInside];
 }

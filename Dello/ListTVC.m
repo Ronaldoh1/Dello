@@ -8,6 +8,7 @@
 
 #import "ListTVC.h"
 #import "ListCostumeCell.h"
+#import "AddItemVC.h"
 #import "User.h"
 #import "List.h"
 
@@ -285,6 +286,12 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 //     Get the new view controller using [segue destinationViewController].
+
+    if (![segue.identifier isEqualToString:@""]) {
+        AddItemVC *destinationVC = (AddItemVC *)segue.destinationViewController;
+
+        
+    }
 //     Pass the selected object to the new view controller.
 }
 

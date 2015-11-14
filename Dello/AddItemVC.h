@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "List.h"
 @interface AddItemVC : UIViewController
+@property (nonatomic, strong) List *list;
 
 @end

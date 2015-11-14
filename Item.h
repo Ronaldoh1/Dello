@@ -10,7 +10,8 @@
 #import <Parse/Parse.h>
 
 @interface Item : PFObject<PFSubclassing>
-@property (nonatomic, strong) NSString *placeName;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) PFGeoPoint *placeLocation;
 @property (nonatomic, strong) NSNumber *placeRating;
 @property (nonatomic, strong) NSDate *hours;

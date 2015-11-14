@@ -9,7 +9,8 @@
 #import "Item.h"
 
 @implementation Item
-@dynamic placeName;
+@dynamic title;
+@dynamic description;
 @dynamic  placeLocation;
 @dynamic placeRating;
 @dynamic hours;
