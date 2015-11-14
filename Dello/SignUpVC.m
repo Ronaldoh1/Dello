@@ -130,8 +130,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
     CGRect textFieldRect =
     [self.view.window convertRect:textField.bounds fromView:textField];
-    CGRect viewRect =
-    [self.view.window convertRect:self.view.bounds fromView:self.view];
+    CGRect viewRect = [self.view.window convertRect:self.view.bounds fromView:self.view];
     CGFloat midline = textFieldRect.origin.y + 0.5 * textFieldRect.size.height;
     CGFloat numerator =
     midline - viewRect.origin.y

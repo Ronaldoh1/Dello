@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8B7C3845056D38BF6FA3B3F0 /* libPods-Dello.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 639E7C0EA99838D2BC42666B /* libPods-Dello.a */; };
+		F211208F1BF272BB0071A886 /* Terms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F211208E1BF272BB0071A886 /* Terms.storyboard */; };
+		F21120921BF272D70071A886 /* TermsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F21120911BF272D70071A886 /* TermsVC.m */; };
 		F25D5C341BE29E6700AFF575 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5C331BE29E6700AFF575 /* User.m */; };
 		F25D5C3A1BE2A75D00AFF575 /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C391BE2A75D00AFF575 /* launchScreen.png */; };
 		F25D5C561BE3F4EC00AFF575 /* ProfileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5C551BE3F4EC00AFF575 /* ProfileInfo.m */; };
@@ -85,6 +87,9 @@
 /* Begin PBXFileReference section */
 		156618C734F04A69E7964275 /* Pods-Dello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dello.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dello/Pods-Dello.release.xcconfig"; sourceTree = "<group>"; };
 		639E7C0EA99838D2BC42666B /* libPods-Dello.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dello.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F211208E1BF272BB0071A886 /* Terms.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Terms.storyboard; sourceTree = "<group>"; };
+		F21120901BF272D70071A886 /* TermsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsVC.h; sourceTree = "<group>"; };
+		F21120911BF272D70071A886 /* TermsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsVC.m; sourceTree = "<group>"; };
 		F25D5C321BE29E6700AFF575 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		F25D5C331BE29E6700AFF575 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		F25D5C391BE2A75D00AFF575 /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreen.png; sourceTree = "<group>"; };
@@ -211,6 +216,23 @@
 				639E7C0EA99838D2BC42666B /* libPods-Dello.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F211208D1BF2728C0071A886 /* Terms & Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				F211208E1BF272BB0071A886 /* Terms.storyboard */,
+				F21120901BF272D70071A886 /* TermsVC.h */,
+				F21120911BF272D70071A886 /* TermsVC.m */,
+			);
+			name = "Terms & Conditions";
+			sourceTree = "<group>";
+		};
+		F21120931BF27D800071A886 /* Edit Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Edit Profile";
 			sourceTree = "<group>";
 		};
 		F25D5C301BE2911700AFF575 /* Frameworks */ = {
@@ -451,6 +473,8 @@
 		F2BD66411BDDBF9000D189F3 /* Dello */ = {
 			isa = PBXGroup;
 			children = (
+				F21120931BF27D800071A886 /* Edit Profile */,
+				F211208D1BF2728C0071A886 /* Terms & Conditions */,
 				F25D5C301BE2911700AFF575 /* Frameworks */,
 				F2B911691BE061A000FABD42 /* AppDelegate */,
 				F25D5C311BE29E4800AFF575 /* Data */,
@@ -623,6 +647,7 @@
 				F2BD66551BDDBF9000D189F3 /* LaunchScreen.storyboard in Resources */,
 				F2B911771BE0774900FABD42 /* Profile.storyboard in Resources */,
 				F25D5C3A1BE2A75D00AFF575 /* launchScreen.png in Resources */,
+				F211208F1BF272BB0071A886 /* Terms.storyboard in Resources */,
 				F2B2E6E51BF1B0F000153EC6 /* groupIcon.jpg in Resources */,
 				F2B9116B1BE061BD00FABD42 /* Tutorial.storyboard in Resources */,
 				F26E19ED1BEEB45800900037 /* signInButton.png in Resources */,
@@ -722,6 +747,7 @@
 				F25D5C341BE29E6700AFF575 /* User.m in Sources */,
 				F2B2E6E31BF1AF4D00153EC6 /* VoteTVC.m in Sources */,
 				F2B2E6E81BF1B1B500153EC6 /* VoteCustomCell.m in Sources */,
+				F21120921BF272D70071A886 /* TermsVC.m in Sources */,
 				F26E19D51BED25E300900037 /* Group.m in Sources */,
 				F2BD66501BDDBF9000D189F3 /* Dello.xcdatamodeld in Sources */,
 				F2B911961BE182D500FABD42 /* WelcomeVC.m in Sources */,

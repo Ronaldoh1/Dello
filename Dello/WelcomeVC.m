@@ -59,8 +59,9 @@
     [self presentViewController:signUpNavVC animated:YES completion:nil];
     
 
-
 }
+
+
 - (IBAction)onSignInWithFbButtonTapped:(UIButton *)sender {
     //1. need to get user's permissions.
     NSArray *permissionsArray = [NSArray arrayWithObjects:@"public_profile", @"email", @"user_friends", nil];
@@ -92,6 +93,15 @@
 
     [self presentViewController:mainTabbar animated:YES completion:nil];
     
+}
+- (IBAction)onTermsAndConditionsButtonTapped:(UIButton *)sender {
+
+    UIStoryboard *termsStoryboard = [UIStoryboard storyboardWithName:@"Terms" bundle:nil];
+
+    UINavigationController *termsNavVC = [termsStoryboard instantiateViewControllerWithIdentifier:@"TermsNavVC"];
+    [self presentViewController:termsNavVC animated:YES completion:nil];
+
+
 }
 
 /*

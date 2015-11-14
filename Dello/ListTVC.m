@@ -40,7 +40,9 @@
 
     [self setUpProfileImage];
 
-    self.listsArray = [NSMutableArray arrayWithObjects:@"Friday night",@"Gifts for Mom", @"Birthday Bash", @"Future Trip", nil];
+    self.listsArray = [NSMutableArray new];
+
+    //self.listsArray = [NSMutableArray arrayWithObjects:@"Friday night",@"Gifts for Mom", @"Birthday Bash", @"Future Trip", nil];
 
 
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:119.0/255.0 green:158.0/255.0 blue:203.0/255.0 alpha:1.0];
@@ -99,7 +101,13 @@
 - (ListCostumeCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ListCostumeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
 
-    cell.listTitle.text = self.listsArray[indexPath.row];
+    //for every cell we will display the list name and description
+
+    List *list = (List *)[self.listsArray objectAtIndex:indexPath.row];
+
+    cell.listTitle.text = list.listTitle;
+    cell.listDescription.text = list.listDescription;
+
 
     return cell;
 }
@@ -190,13 +198,32 @@
                                   message:@"Enter a title and a short description"
                                   preferredStyle:UIAlertControllerStyleAlert];
 
+
+
     UIAlertAction* ok = [UIAlertAction actionWithTitle:@"Continue" style:UIAlertActionStyleDefault
                                                handler:^(UIAlertAction * action) {
 
-                                                   [self.listsArray addObject:alert.textFields[0].text];
+
+
+
+                                                 //create a new list
+
+                                                 //populate the list with items entered in the alert controller
+                                                   List *newList = [[List alloc]initListWithTitle:alert.textFields[0].text AndWithDescription:alert.textFields[1].text];
+
+                                                   //add the list to the array and we want to reload data to refresh the view
+
+                                                   [self.listsArray addObject:newList];
+
+
+
+
+                                                   //[self.listsArray addObject:alert.textFields[0].text];
                                                    [self.tableView reloadData];
 
                                                }];
+
+
     UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault
                                                    handler:^(UIAlertAction * action) {
                                                        [alert dismissViewControllerAnimated:YES completion:nil];
@@ -254,14 +281,11 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//     Get the new view controller using [segue destinationViewController].
+//     Pass the selected object to the new view controller.
 }
-*/
 
 @end

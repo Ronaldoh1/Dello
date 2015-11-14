@@ -20,4 +20,6 @@
 
 
 
+-(instancetype)initListWithTitle:(NSString *)title AndWithDescription:(NSString *)description;
+
 @end

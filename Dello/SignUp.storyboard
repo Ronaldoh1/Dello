@@ -102,18 +102,15 @@
                         </subviews>
                         <animations/>
                         <constraints>
-                            <constraint firstItem="NDl-ke-ESg" firstAttribute="trailing" secondItem="yTv-7r-1VR" secondAttribute="trailingMargin" constant="11" id="13P-Lg-7AD"/>
                             <constraint firstAttribute="centerY" secondItem="n89-o6-6Q8" secondAttribute="centerY" constant="-40" id="3LW-bH-csh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n89-o6-6Q8" secondAttribute="trailing" constant="-7" id="4pV-H0-56P"/>
                             <constraint firstItem="e5b-pg-Ceg" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-7" id="68p-DA-zjT"/>
-                            <constraint firstItem="NDl-ke-ESg" firstAttribute="centerY" secondItem="yTv-7r-1VR" secondAttribute="centerY" constant="-86" id="7Mk-Ux-n23"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mWt-Tx-ivT" secondAttribute="trailing" constant="18" id="8gB-vY-pza"/>
                             <constraint firstAttribute="centerY" secondItem="z0t-aI-8Zg" secondAttribute="centerY" constant="-142.5" id="B0P-LA-FcF"/>
                             <constraint firstItem="NDl-ke-ESg" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-20" id="Cze-bK-9EG"/>
                             <constraint firstItem="mWt-Tx-ivT" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="19" id="EWF-1H-tPj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vi3-j9-cg5" secondAttribute="trailing" constant="-7" id="Q62-Ht-XGR"/>
                             <constraint firstItem="n89-o6-6Q8" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-7" id="RaT-UM-kIc"/>
-                            <constraint firstItem="NDl-ke-ESg" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-13" id="WSO-hf-nPS"/>
                             <constraint firstAttribute="centerY" secondItem="mWt-Tx-ivT" secondAttribute="centerY" constant="-146" id="YyZ-82-mCD"/>
                             <constraint firstAttribute="centerY" secondItem="e5b-pg-Ceg" secondAttribute="centerY" constant="3" id="b66-hf-yit"/>
                             <constraint firstItem="s5g-Ya-A0m" firstAttribute="top" secondItem="NDl-ke-ESg" secondAttribute="bottom" id="dEk-HD-cJL"/>
@@ -124,13 +121,6 @@
                             <constraint firstItem="vi3-j9-cg5" firstAttribute="leading" secondItem="yTv-7r-1VR" secondAttribute="leadingMargin" constant="-7" id="zCP-ql-RRc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e5b-pg-Ceg" secondAttribute="trailing" constant="-7" id="zhO-Mb-5bL"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="13P-Lg-7AD"/>
-                                <exclude reference="7Mk-Ux-n23"/>
-                                <exclude reference="WSO-hf-nPS"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Let's Get Started" id="Hg4-W9-E5O">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" style="done" id="EL3-Ka-Xty">
