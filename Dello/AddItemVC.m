@@ -34,6 +34,8 @@
 
     NSLog(@"Tapped item");
    // [self displayAlertMessage:@"HI" andWith:@"boo"];
+
+    [self presentAlertControllerForNewItem];
 }
 
 #pragma mark - Table view data source
@@ -49,6 +51,8 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+
+
 
 
     return cell;

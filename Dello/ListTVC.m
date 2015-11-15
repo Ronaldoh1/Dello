@@ -57,7 +57,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:YES];
     //Change the global tint
-
+    NSLog(@"%@", self.listsArray);
  
 
 
