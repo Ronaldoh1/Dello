@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSDate *decisionDueDate;
 @property (nonatomic, strong) NSDate *dateOfEvent;
 @property (nonatomic, strong) NSString *listType;
-@property (nonatomic, strong) NSMutableDictionary *itemsDictionary;
+@property (nonatomic, strong) NSMutableArray *itemsArray;
 @property (nonatomic, strong) NSDate *decionDate;
 
 

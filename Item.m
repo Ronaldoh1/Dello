@@ -19,6 +19,18 @@
 
 //required methods
 
+-(instancetype)initWithItemTitle:(NSString *)title andDescription:(NSString *)description{
+
+    if (self = [super init]) {
+        self.title = title;
+        self.description = description;
+
+    }
+
+
+    return self;
+}
+
 +(void)load{
     [self registerSubclass];
 }

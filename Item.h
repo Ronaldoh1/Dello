@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSNumber *placeRating;
 @property (nonatomic, strong) NSDate *hours;
 @property (nonatomic, strong) PFFile *profileImage;
-@property (nonatomic, strong) NSString *detail; 
+@property (nonatomic, strong) NSString *detail;
 
+-(instancetype)initWithItemTitle:(NSString *)title andDescription:(NSString *)description;
 @end

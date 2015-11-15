@@ -14,7 +14,7 @@
 @dynamic decisionDueDate;
 @dynamic dateOfEvent;
 @dynamic listType;
-@dynamic itemsDictionary;
+@dynamic itemsArray;
 @dynamic decionDate;
 
 //Required parse methods to comply with API

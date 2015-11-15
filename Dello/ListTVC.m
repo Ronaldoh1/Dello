@@ -287,8 +287,12 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 //     Get the new view controller using [segue destinationViewController].
 
-    if (![segue.identifier isEqualToString:@""]) {
+    if ([segue.identifier isEqualToString:@"moveToAddItemVC"]) {
         AddItemVC *destinationVC = (AddItemVC *)segue.destinationViewController;
+
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+
+        destinationVC.list = (List *)self.listsArray[indexPath.row];
 
         
     }

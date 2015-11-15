@@ -69,7 +69,7 @@
                                     <outlet property="listDescription" destination="CWy-mD-26F" id="Z9p-lB-TJg"/>
                                     <outlet property="listImage" destination="wge-am-2tN" id="7bU-xw-q0b"/>
                                     <outlet property="listTitle" destination="Rv4-gV-lbM" id="GkX-LG-1sM"/>
-                                    <segue destination="EFp-Le-cRE" kind="show" id="rWY-ri-BfV"/>
+                                    <segue destination="EFp-Le-cRE" kind="show" identifier="moveToAddItemVC" id="rWY-ri-BfV"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

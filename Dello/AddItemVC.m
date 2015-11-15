@@ -7,6 +7,7 @@
 //
 
 #import "AddItemVC.h"
+#import "Item.h"
 
 @interface AddItemVC ()<UITableViewDelegate, UITableViewDataSource>
 @property UIButton *addItemButton;
@@ -21,6 +22,8 @@
     self.addItemButton = [self createButtonWithTitle:@"Done"];
 
     [self.addItemButton addTarget:self action:@selector(addItemToList) forControlEvents:UIControlEventTouchUpInside];
+
+    NSLog(@"%@", self.list.listTitle);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,7 +33,7 @@
 - (IBAction)onAddItemButttonTapp:(UIBarButtonItem *)sender {
 
     NSLog(@"Tapped item");
-    [self displayAlertMessage:@"HI" andWith:@"boo"];
+   // [self displayAlertMessage:@"HI" andWith:@"boo"];
 }
 
 #pragma mark - Table view data source
@@ -105,22 +108,49 @@
 
 /*AlertController for adding an item*/
 
--(void)displayAlertMessage:(NSString *)title andWith:(NSString *)message{
+-(void)presentAlertControllerForNewItem{
 
     //1. Create a UIAlertController
 
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"New Item?"
+                                                            message:@"What, When & Where?"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
 
     //2. Create a UIAlertController to be added to the alert.
 
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    UIAlertAction *addAction = [UIAlertAction actionWithTitle:@"Add" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
 
+        //Create a new Item
+        Item *item = [[Item alloc] initWithItemTitle:alertController.textFields[0].text andDescription:alertController.textFields[1].text];
+
+        //Add item to the Array
+
+        NSMutableArray *array = [NSMutableArray arrayWithArray:self.list.itemsArray];
+
+        [array addObject:item];
+
+        self.list.itemsArray = array;
+        
+
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertController dismissViewControllerAnimated:YES completion:nil];
     }];
 
-    //3. Add the action to the controller.
-    [alertController addAction:okAction];
 
+
+    //3. Add the action to the controller.
+    [alertController addAction:addAction];
+    [alertController addAction:cancelAction];
+
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"Item Title";
+
+    }];
+
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"Description";
+    }];
 
     [self presentViewController:alertController animated:YES completion:nil];
     
