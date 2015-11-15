@@ -11,6 +11,8 @@
 
 @interface AddItemVC ()<UITableViewDelegate, UITableViewDataSource>
 @property UIButton *addItemButton;
+@property (nonatomic, strong) NSMutableArray *itemsArray;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -22,6 +24,10 @@
     self.addItemButton = [self createButtonWithTitle:@"Done"];
 
     [self.addItemButton addTarget:self action:@selector(addItemToList) forControlEvents:UIControlEventTouchUpInside];
+
+    self.itemsArray = [NSMutableArray new];
+
+    self.itemsArray = [NSMutableArray arrayWithArray:self.list.itemsArray];
 
     NSLog(@"%@", self.list.listTitle);
 }
@@ -41,19 +47,34 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [self.itemsArray count];
 }
+
+/* In this method -> cellForRowAtIndexPath: we are going to populate each cell with the appropriate details for each item added.
+ 
+ */
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
+//1. Initialize the Cell
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
 
+//2. Check if the cell is nill
 
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    }
 
+//3. We need to populate the cell with appropriate details.
+    Item *item = [Item new];
+    item = (Item *)self.itemsArray[indexPath.row];
+
+    cell.textLabel.text = item.title;
+    cell.detailTextLabel.text = item.itemDescription;
 
     return cell;
 }
@@ -129,12 +150,21 @@
 
         //Add item to the Array
 
-        NSMutableArray *array = [NSMutableArray arrayWithArray:self.list.itemsArray];
+       // NSMutableArray *array = [NSMutableArray arrayWithArray:self.list.itemsArray];
 
-        [array addObject:item];
+        [self.itemsArray addObject:item];
 
-        self.list.itemsArray = array;
-        
+
+        //get the indexPath where the cell should be inserted. Basically we need to get the total count of elements in the array and subtract 1. This will allow us to insert an object at the end and create a new cell after the last cell.
+
+         //  [self.tableView beginUpdates];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:([self.itemsArray count]-1) inSection:0];
+
+
+        [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        //[self.tableView endUpdates];
+
+        self.list.itemsArray = self.itemsArray;
 
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {

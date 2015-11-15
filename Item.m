@@ -10,8 +10,8 @@
 
 @implementation Item
 @dynamic title;
-@dynamic description;
-@dynamic  placeLocation;
+@dynamic itemDescription;
+@dynamic placeLocation;
 @dynamic placeRating;
 @dynamic hours;
 @dynamic profileImage;
@@ -23,7 +23,7 @@
 
     if (self = [super init]) {
         self.title = title;
-        self.description = description;
+        self.itemDescription = description;
 
     }
 

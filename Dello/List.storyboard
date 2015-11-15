@@ -160,6 +160,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="bTz-OJ-9E5" id="hrw-tn-aHj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1g-sZ-7Do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

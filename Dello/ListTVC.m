@@ -207,21 +207,18 @@
 
 
 
-                                                 //create a new list
+    //create a new list
 
-                                                 //populate the list with items entered in the alert controller
-                                                   List *newList = [[List alloc]initListWithTitle:alert.textFields[0].text AndWithDescription:alert.textFields[1].text];
+    //populate the list with items entered in the alert controller
+    List *newList = [[List alloc]initListWithTitle:alert.textFields[0].text AndWithDescription:alert.textFields[1].text];
 
-                                                   //add the list to the array and we want to reload data to refresh the view
+    //add the list to the array and we want to reload data to refresh the view
 
-                                                   [self.listsArray addObject:newList];
+    [self.listsArray addObject:newList];
 
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:([self.listsArray count] - 1) inSection:0];
 
-
-
-                                                   //[self.listsArray addObject:alert.textFields[0].text];
-                                                   [self.tableView reloadData];
-
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
                                                }];
 
 
@@ -229,9 +226,9 @@
                                                    handler:^(UIAlertAction * action) {
                                                        [alert dismissViewControllerAnimated:YES completion:nil];
                                                    }];
-
+   [alert addAction:cancel];
     [alert addAction:ok];
-    [alert addAction:cancel];
+
 
     [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         textField.placeholder = @"List Title";

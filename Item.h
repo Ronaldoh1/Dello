@@ -11,7 +11,7 @@
 
 @interface Item : PFObject<PFSubclassing>
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *description;
+@property (nonatomic, strong) NSString *itemDescription;
 @property (nonatomic, strong) PFGeoPoint *placeLocation;
 @property (nonatomic, strong) NSNumber *placeRating;
 @property (nonatomic, strong) NSDate *hours;
