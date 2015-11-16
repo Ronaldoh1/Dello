@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FriendSearch.storyboard">
+   </FileRef>
+   <FileRef
       location = "group:Dello.xcodeproj">
    </FileRef>
    <FileRef

@@ -11,6 +11,12 @@
 		F211208F1BF272BB0071A886 /* Terms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F211208E1BF272BB0071A886 /* Terms.storyboard */; };
 		F21120921BF272D70071A886 /* TermsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F21120911BF272D70071A886 /* TermsVC.m */; };
 		F21120951BF7AF990071A886 /* cameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F21120941BF7AF990071A886 /* cameraIcon.png */; };
+		F21120A41BF923580071A886 /* FriendSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21120A31BF923580071A886 /* FriendSearch.storyboard */; };
+		F21120A71BF92A450071A886 /* FriendSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F21120A61BF92A450071A886 /* FriendSearchVC.m */; };
+		F21120AA1BF934D70071A886 /* AddFriend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21120A91BF934D70071A886 /* AddFriend.storyboard */; };
+		F21120AD1BF93BD30071A886 /* FriendsSearchResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F21120AC1BF93BD30071A886 /* FriendsSearchResultsVC.m */; };
+		F21120B01BF945090071A886 /* GroupFriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F21120AF1BF945090071A886 /* GroupFriendsVC.m */; };
+		F21120B31BF972D60071A886 /* AddFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F21120B21BF972D60071A886 /* AddFriendVC.m */; };
 		F25D5C341BE29E6700AFF575 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5C331BE29E6700AFF575 /* User.m */; };
 		F25D5C3A1BE2A75D00AFF575 /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F25D5C391BE2A75D00AFF575 /* launchScreen.png */; };
 		F25D5C561BE3F4EC00AFF575 /* ProfileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F25D5C551BE3F4EC00AFF575 /* ProfileInfo.m */; };
@@ -92,6 +98,16 @@
 		F21120901BF272D70071A886 /* TermsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsVC.h; sourceTree = "<group>"; };
 		F21120911BF272D70071A886 /* TermsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsVC.m; sourceTree = "<group>"; };
 		F21120941BF7AF990071A886 /* cameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraIcon.png; sourceTree = "<group>"; };
+		F21120A31BF923580071A886 /* FriendSearch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FriendSearch.storyboard; sourceTree = "<group>"; };
+		F21120A51BF92A450071A886 /* FriendSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendSearchVC.h; sourceTree = "<group>"; };
+		F21120A61BF92A450071A886 /* FriendSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendSearchVC.m; sourceTree = "<group>"; };
+		F21120A91BF934D70071A886 /* AddFriend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddFriend.storyboard; sourceTree = "<group>"; };
+		F21120AB1BF93BD30071A886 /* FriendsSearchResultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsSearchResultsVC.h; sourceTree = "<group>"; };
+		F21120AC1BF93BD30071A886 /* FriendsSearchResultsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsSearchResultsVC.m; sourceTree = "<group>"; };
+		F21120AE1BF945090071A886 /* GroupFriendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupFriendsVC.h; sourceTree = "<group>"; };
+		F21120AF1BF945090071A886 /* GroupFriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupFriendsVC.m; sourceTree = "<group>"; };
+		F21120B11BF972D60071A886 /* AddFriendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendVC.h; sourceTree = "<group>"; };
+		F21120B21BF972D60071A886 /* AddFriendVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendVC.m; sourceTree = "<group>"; };
 		F25D5C321BE29E6700AFF575 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		F25D5C331BE29E6700AFF575 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		F25D5C391BE2A75D00AFF575 /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreen.png; sourceTree = "<group>"; };
@@ -235,6 +251,28 @@
 			children = (
 			);
 			name = "Edit Profile";
+			sourceTree = "<group>";
+		};
+		F21120A21BF9234C0071A886 /* FriendSearch */ = {
+			isa = PBXGroup;
+			children = (
+				F21120A31BF923580071A886 /* FriendSearch.storyboard */,
+				F21120AB1BF93BD30071A886 /* FriendsSearchResultsVC.h */,
+				F21120AC1BF93BD30071A886 /* FriendsSearchResultsVC.m */,
+				F21120A51BF92A450071A886 /* FriendSearchVC.h */,
+				F21120A61BF92A450071A886 /* FriendSearchVC.m */,
+			);
+			name = FriendSearch;
+			sourceTree = "<group>";
+		};
+		F21120A81BF934BF0071A886 /* Add Friends */ = {
+			isa = PBXGroup;
+			children = (
+				F21120A91BF934D70071A886 /* AddFriend.storyboard */,
+				F21120B11BF972D60071A886 /* AddFriendVC.h */,
+				F21120B21BF972D60071A886 /* AddFriendVC.m */,
+			);
+			name = "Add Friends";
 			sourceTree = "<group>";
 		};
 		F25D5C301BE2911700AFF575 /* Frameworks */ = {
@@ -385,6 +423,8 @@
 			isa = PBXGroup;
 			children = (
 				F2B9116F1BE0706900FABD42 /* Group.storyboard */,
+				F21120AE1BF945090071A886 /* GroupFriendsVC.h */,
+				F21120AF1BF945090071A886 /* GroupFriendsVC.m */,
 				F2B2E6D21BF143C000153EC6 /* GroupCustomCell.h */,
 				F2B2E6D31BF143C000153EC6 /* GroupCustomCell.m */,
 				F2B2E6DE1BF195E500153EC6 /* GroupTVC.h */,
@@ -476,6 +516,8 @@
 		F2BD66411BDDBF9000D189F3 /* Dello */ = {
 			isa = PBXGroup;
 			children = (
+				F21120A81BF934BF0071A886 /* Add Friends */,
+				F21120A21BF9234C0071A886 /* FriendSearch */,
 				F21120931BF27D800071A886 /* Edit Profile */,
 				F211208D1BF2728C0071A886 /* Terms & Conditions */,
 				F25D5C301BE2911700AFF575 /* Frameworks */,
@@ -644,9 +686,11 @@
 				F21120951BF7AF990071A886 /* cameraIcon.png in Resources */,
 				F2B2E6CB1BF0F8F800153EC6 /* AppIcon40x40@3x.png in Resources */,
 				F2B2E6CC1BF0F8F800153EC6 /* AppIcon60x60@2x.png in Resources */,
+				F21120A41BF923580071A886 /* FriendSearch.storyboard in Resources */,
 				F2B2E6CD1BF0F8F800153EC6 /* AppIcon60x60@3x.png in Resources */,
 				F26E19DA1BEE7FEE00900037 /* beerIcon.png in Resources */,
 				F26E19F51BEEC92C00900037 /* voteTab.png in Resources */,
+				F21120AA1BF934D70071A886 /* AddFriend.storyboard in Resources */,
 				F25D5C861BE412BE00AFF575 /* groupTab.png in Resources */,
 				F2BD66551BDDBF9000D189F3 /* LaunchScreen.storyboard in Resources */,
 				F2B911771BE0774900FABD42 /* Profile.storyboard in Resources */,
@@ -743,6 +787,8 @@
 				F2B911801BE173DE00FABD42 /* SignUpVC.m in Sources */,
 				F26E19E31BEE94E300900037 /* AddItemVC.m in Sources */,
 				F2B2E6F11BF1DCA000153EC6 /* ResultsCustomCell.m in Sources */,
+				F21120B31BF972D60071A886 /* AddFriendVC.m in Sources */,
+				F21120B01BF945090071A886 /* GroupFriendsVC.m in Sources */,
 				F2BD664A1BDDBF9000D189F3 /* TabBarViewController.m in Sources */,
 				F2BD66471BDDBF9000D189F3 /* AppDelegate.m in Sources */,
 				F2B9117D1BE173BD00FABD42 /* SignInVC.m in Sources */,
@@ -760,7 +806,9 @@
 				F26E19D21BED1D3D00900037 /* Item.m in Sources */,
 				F2B9119E1BE1F5FB00FABD42 /* PageContentVC.m in Sources */,
 				F2B2E6D41BF143C000153EC6 /* GroupCustomCell.m in Sources */,
+				F21120A71BF92A450071A886 /* FriendSearchVC.m in Sources */,
 				F2B2E6F71BF1DE3100153EC6 /* DiscoverTVC.m in Sources */,
+				F21120AD1BF93BD30071A886 /* FriendsSearchResultsVC.m in Sources */,
 				F25D5CAB1BE6D92200AFF575 /* List.m in Sources */,
 				F2B2E6FA1BF1DE5400153EC6 /* DiscoverCustomCell.m in Sources */,
 				F2BD66441BDDBF9000D189F3 /* main.m in Sources */,
